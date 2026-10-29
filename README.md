@@ -14,7 +14,8 @@ numbers and figures.
 | `run_matched_oracle_v28.py` | Matched zero-conflict offline schedule, Eq. (8) of the paper (stage V28). |
 | `run_oracle_imitation_v29.py` | Causal imitation of the offline schedule, Sections III-E and V-C (stage V29), with `selftest`, `freeze`, `run`, and `summarize` actions. |
 | `compare_v29.py` | Joins the imitation results with the threshold forecasters and the offline schedule. |
-| `imitation_frontier.py` | Draws Fig. 3 from `frontier_points.csv`. |
+| `imitation_frontier.py` | Draws Figs. 2 and 3 of the paper from `figure_envelope_points.csv` and `frontier_points.csv`. |
+| `figure_envelope_points.csv` | Fixed-trace control budgets plotted in Fig. 2. |
 | `frozen.json` | Imitation protocol frozen before any evaluation-subject (A) result; `source_sha256` is the SHA-256 of `run_oracle_imitation_v29.py`. |
 | `imitation_dataset_equal_metrics.csv` | Subject-equal results for all 18 imitation settings in all nine dataset-grid scenarios, with the model-package fee charged and waived. |
 | `research_decision.json` | Joint-screen decision: no imitation setting passes any scenario. |
