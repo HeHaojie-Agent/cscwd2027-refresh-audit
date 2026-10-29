@@ -2,14 +2,14 @@ import pandas as pd, numpy as np, matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib import font_manager as fm
-# Run from code/: python imitation_frontier.py  (Times New Roman on Windows, TeX Gyre Termes elsewhere)
+# Run in this folder: python imitation_frontier.py  (Times New Roman on Windows, TeX Gyre Termes elsewhere)
 import os
 family='Times New Roman' if any('Times New Roman' in f.name for f in fm.fontManager.ttflist) else 'TeX Gyre Termes'
 for f in ['/usr/share/texmf/fonts/opentype/public/tex-gyre/texgyretermes-regular.otf']:
     if os.path.exists(f): fm.fontManager.addfont(f)
 plt.rcParams.update({'font.family':family,'mathtext.fontset':'stix','font.size':8,'axes.linewidth':0.6,
   'xtick.major.width':0.6,'ytick.major.width':0.6,'xtick.major.size':2.5,'ytick.major.size':2.5,'pdf.fonttype':42})
-f=pd.read_csv('../results/oracle_imitation_v29/frontier_points.csv'); f=f[(f.stride==1)&(f.offset==0)].copy()
+f=pd.read_csv('frontier_points.csv'); f=f[(f.stride==1)&(f.offset==0)].copy()
 f['x']=100*f.reference_disagreement; f['y']=100*f.savings_fraction
 fig,axes=plt.subplots(1,3,figsize=(7.16,2.05),sharey=True)
 fam={'imit_linear':('#0072B2','o','Imitation, linear'),'imit_boost':('#009E73','s','Imitation, boosted'),'imit_boost_diag':('#CC79A7','D','Imitation, diagnostic (fee-free)')}
