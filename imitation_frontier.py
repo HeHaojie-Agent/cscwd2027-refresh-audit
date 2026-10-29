@@ -29,7 +29,7 @@ def style(ax):
 
 def envelope(out='cost_envelope'):
     d=pd.read_csv('figure_envelope_points.csv')
-    fig,axes=plt.subplots(1,3,figsize=(W,2.0),sharey=True)
+    fig,axes=plt.subplots(1,3,figsize=(W,1.85),sharey=True)
     for ax,(ds,title) in zip(axes,TITLES):
         style(ax)
         ax.axhline(30,color=MUTED,lw=0.9,ls=(0,(1,2)),zorder=2)
@@ -45,7 +45,7 @@ def envelope(out='cost_envelope'):
              Line2D([],[],color=MUTED,lw=0.9,ls=(0,(4,2)),label='Free control (0 B)'),
              Line2D([],[],color=MUTED,lw=0.9,ls=(0,(1,2)),label='Implemented charge (30 B)')]
     fig.legend(handles=handles,loc='upper center',ncol=4,frameon=False,bbox_to_anchor=(0.5,1.0),handlelength=2.2,columnspacing=1.6)
-    fig.subplots_adjust(left=0.075,right=0.99,bottom=0.2,top=0.8,wspace=0.12)
+    fig.subplots_adjust(left=0.075,right=0.99,bottom=0.21,top=0.8,wspace=0.12)
     fig.savefig(out+'.pdf'); fig.savefig(out+'.png',dpi=300); plt.close(fig)
 
 def frontier(out='imitation_frontier'):
@@ -53,7 +53,7 @@ def frontier(out='imitation_frontier'):
     f['x']=100*f.reference_disagreement; f['y']=100*f.savings_fraction
     fam={'imit_boost_diag':('#CC79A7','D','Imitation, diagnostic (fee-free)'),
          'imit_boost':('#009E73','s','Imitation, boosted'),'imit_linear':(DIR,'o','Imitation, linear')}
-    fig,axes=plt.subplots(1,3,figsize=(W,2.4),sharey=True)
+    fig,axes=plt.subplots(1,3,figsize=(W,2.2),sharey=True)
     for ax,(ds,title) in zip(axes,TITLES):
         style(ax); d=f[f.dataset==ds]
         ax.axvspan(-0.4,1,color='#EFEFEF',lw=0,zorder=0)
@@ -80,7 +80,7 @@ def frontier(out='imitation_frontier'):
              Line2D([],[],ls='',marker='x',ms=4.5,color=INK,label='Periodic, interval 2')]
     order=[0,4,5,1,2,3]
     fig.legend(handles=[handles[i] for i in order],loc='upper center',ncol=3,frameon=False,bbox_to_anchor=(0.5,1.0),handlelength=2.0,columnspacing=1.6,handletextpad=0.5)
-    fig.subplots_adjust(left=0.075,right=0.99,bottom=0.17,top=0.74,wspace=0.12)
+    fig.subplots_adjust(left=0.075,right=0.99,bottom=0.18,top=0.72,wspace=0.12)
     fig.savefig(out+'.pdf'); fig.savefig(out+'.png',dpi=300); plt.close(fig)
 
 if __name__=='__main__':
