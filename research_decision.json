@@ -1,0 +1,16 @@
+{
+  "version": "oracle_imitation_v29",
+  "passing": {
+    "charged": {
+      "all_six_original": [],
+      "all_three_external": []
+    },
+    "fee_free": {
+      "all_six_original": [],
+      "all_three_external": []
+    }
+  },
+  "case_grids": 396,
+  "deployable_decision_uses": "charged",
+  "diagnostic_family": "imit_boost_diag"
+}

@@ -1,0 +1,505 @@
+source,dataset,stride,offset,method,savings_fraction,reference_disagreement,deployable_full_models_per_window,positive_subject_fraction,known_endpoint_macro_f1_drop,all_checks_passed,failed_checks
+V29 charged,mhealth,1,0,imit_boost_diag_g0.5,0.2728908272097619,0.0667321540927223,1.669312457197477,1.0,-0.0032559148825293,False,reference_disagreement_at_most_one_percent
+V29 charged,mhealth,1,0,imit_boost_diag_g0.6,0.1707937590439712,0.0377948943082721,1.8509375868197664,1.0,-0.003102229120222,False,reference_disagreement_at_most_one_percent
+V29 charged,mhealth,1,0,imit_boost_diag_g0.7,0.04814107483156993,0.0172690661683068,2.070522807476519,1.0,-0.0020694671985251,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,1,0,imit_boost_diag_g0.8,-0.10802645359644081,0.0047822058498502,2.3520085300514624,0.0,-0.0007851444095726,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,mhealth,1,0,imit_boost_diag_g0.9,-0.3450730631808012,0.000348929482052,2.7852238718246096,0.0,-0.0002038041106546,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,1,0,imit_boost_diag_g0.95,-0.4495806157143749,9.88837695463506e-06,2.977463356816779,0.0,-7.605656231942509e-06,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,1,0,imit_boost_g0.5,0.17106582932929004,0.0751799266444134,1.64424500789427,1.0,-0.0020634198295317,False,reference_disagreement_at_most_one_percent
+V29 charged,mhealth,1,0,imit_boost_g0.6,0.045543302184318124,0.0391992981075831,1.8672283262713452,0.9,-0.0022347255765724,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,1,0,imit_boost_g0.7,-0.09776515526173513,0.0154057614693359,2.123452795067837,0.0,-0.0013738710839956,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,1,0,imit_boost_g0.8,-0.2679671070272718,0.0029520355234465,2.431252171349022,0.0,-0.0004914105211931,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,mhealth,1,0,imit_boost_g0.9,-0.5602986892816659,4.707737421691326e-06,2.9674970641330107,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,1,0,imit_boost_g0.95,-0.5776994242281659,0.0,3.0,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,1,0,imit_linear_g0.5,0.2639383044392597,0.0837842432363027,1.650276477732243,1.0,-0.0012701224382866,False,reference_disagreement_at_most_one_percent
+V29 charged,mhealth,1,0,imit_linear_g0.6,0.15025399813213725,0.051361196647845,1.8526094282439167,1.0,-0.001736459345588,False,reference_disagreement_at_most_one_percent
+V29 charged,mhealth,1,0,imit_linear_g0.7,0.01346211136271569,0.0248130773148883,2.097964722879917,0.8,-0.0010130213595242,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,1,0,imit_linear_g0.8,-0.1446010720937687,0.0077356918548252,2.3836331396524955,0.0,-0.0011842183654077,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,mhealth,1,0,imit_linear_g0.9,-0.3406728104172694,0.000969628579167,2.7415250544162904,0.0,-0.0004595950234196,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,1,0,imit_linear_g0.95,-0.4383656903638937,0.0001355679328681,2.9209124008672576,0.0,-4.117821471843336e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,2,0,imit_boost_diag_g0.5,0.17137745205015276,0.0676325798626943,1.844863953260784,1.0,0.001183133109355,False,reference_disagreement_at_most_one_percent
+V29 charged,mhealth,2,0,imit_boost_diag_g0.6,0.06835980530116725,0.0384566227581858,2.0287783267643453,1.0,-0.0019134786089056,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,2,0,imit_boost_diag_g0.7,-0.04567767747305673,0.0174922730027535,2.2338051722966057,0.0,-0.0016532630715502,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,2,0,imit_boost_diag_g0.8,-0.18325332678972628,0.0055595797318069,2.482928610261528,0.0,-0.0011447449454372,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,mhealth,2,0,imit_boost_diag_g0.9,-0.3913818796517845,0.000537737522947,2.8628825898264965,0.0,-0.0002955242862323,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,2,0,imit_boost_diag_g0.95,-0.4596170741581187,2.981662268818447e-05,2.987630599112068,0.0,-1.5987701534575516e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,2,0,imit_boost_g0.5,0.02919366876266538,0.0653966057017722,1.86781073271479,0.9,-0.0032281951051738,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,2,0,imit_boost_g0.6,-0.09758564114134494,0.0308398928813899,2.094380512498057,0.0,-0.001994611729673,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,2,0,imit_boost_g0.7,-0.24815148433041445,0.009284122251034,2.365261255935445,0.0,-0.0011881664593748,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,mhealth,2,0,imit_boost_g0.8,-0.38789320706273056,0.0012282310480768,2.61883362481568,0.0,-0.000184545952602,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,mhealth,2,0,imit_boost_g0.9,-0.5957597810259885,0.0,2.9999895659432387,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,2,0,imit_boost_g0.95,-0.5957652549969978,0.0,3.0,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,2,0,imit_linear_g0.5,0.15361275474309766,0.0801622843362105,1.837519750354677,1.0,0.0016516152076536,False,reference_disagreement_at_most_one_percent
+V29 charged,mhealth,2,0,imit_linear_g0.6,0.03067505719914221,0.0449244158933627,2.057049283498923,0.8,-0.0002969572255562,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,2,0,imit_linear_g0.7,-0.10060369088091892,0.019995446331586,2.2932777847543213,0.0,-0.0007916375866508,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,2,0,imit_linear_g0.8,-0.24790739787438598,0.0057100194565481,2.560676697360178,0.0,-0.0007363792229854,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,mhealth,2,0,imit_linear_g0.9,-0.4115257741379539,0.0005141305518059,2.8599166928350157,0.0,-9.336243619386743e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,2,0,imit_linear_g0.95,-0.4703355212903908,6.922840095830034e-05,2.967560522116452,0.0,-4.8191115176872414e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,2,1,imit_boost_diag_g0.5,0.17020274102593735,0.0669911663327374,1.847190653039828,1.0,-0.0025131330172683,False,reference_disagreement_at_most_one_percent
+V29 charged,mhealth,2,1,imit_boost_diag_g0.6,0.06729569331632812,0.0391566784809704,2.0307244435275504,1.0,-0.0017802661513342,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,2,1,imit_boost_diag_g0.7,-0.04730335818449505,0.0188121534226903,2.236709472253,0.1,-0.0017773326717672,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,2,1,imit_boost_diag_g0.8,-0.18652488862460115,0.0056006602514717,2.4884485342001224,0.0,-0.0011562825394528,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,mhealth,2,1,imit_boost_diag_g0.9,-0.3940250279507458,0.0005300515364827,2.867328208942007,0.0,-0.0001335775625237,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,2,1,imit_boost_diag_g0.95,-0.45942253108314945,1.311454826366573e-05,2.9870440143671546,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,2,1,imit_boost_g0.5,0.026145482708129775,0.0642962417825436,1.87311762216019,0.8,-0.0030559278251524,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,2,1,imit_boost_g0.6,-0.10142515862078483,0.0310290776520752,2.1004425128675703,0.0,-0.0022684228317654,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,2,1,imit_boost_g0.7,-0.2515492214624062,0.0093504079199941,2.3709382686080467,0.0,-0.0012092322930775,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,mhealth,2,1,imit_boost_g0.8,-0.4162294854993669,0.0013590939169015,2.669119847921912,0.0,-0.0003366856166697,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,mhealth,2,1,imit_boost_g0.9,-0.5942638783465184,0.0,2.996933177833072,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,2,1,imit_boost_g0.95,-0.59590203018997,0.0,3.0,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,2,1,imit_linear_g0.5,0.14945445780867894,0.0795296321020544,1.845106941583873,1.0,0.0009163334325956,False,reference_disagreement_at_most_one_percent
+V29 charged,mhealth,2,1,imit_linear_g0.6,0.023193812650037948,0.0441276436785178,2.070204899102106,0.7,-0.0009285092107162,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,2,1,imit_linear_g0.7,-0.10960770381645224,0.0188549075549463,2.3090632793891164,0.0,-0.0002402119880215,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,mhealth,2,1,imit_linear_g0.8,-0.25572721980035906,0.0054660588127429,2.573887097041612,0.0,-0.0004793188999808,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,mhealth,2,1,imit_linear_g0.9,-0.41363679506068585,0.0006339898867014,2.8624352359452354,0.0,-0.0001476077498182,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,mhealth,2,1,imit_linear_g0.95,-0.47005947176016427,4.381968930366915e-05,2.9664548686331127,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,1,0,imit_boost_diag_g0.5,0.32336935836200364,0.0935399910179197,1.5918083541442267,1.0,0.0205384966483035,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_added_failures_at_most_one_pp,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,opportunity,1,0,imit_boost_diag_g0.6,0.21027794135158484,0.0534295375971929,1.795800260618686,1.0,0.0090357024493231,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,1,0,imit_boost_diag_g0.7,0.08400741529913369,0.0266257155370843,2.024417861339078,1.0,0.0023086423092671,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,1,0,imit_boost_diag_g0.8,-0.054453097946945084,0.0093308103611182,2.277785099080898,0.0,-0.0011463740635857,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,opportunity,1,0,imit_boost_diag_g0.9,-0.31044781733244653,0.0014961484003046,2.749986819237254,0.0,-0.0003777746750293,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,1,0,imit_boost_diag_g0.95,-0.4282060290397294,5.184570717544587e-05,2.968597659921051,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,1,0,imit_boost_g0.5,0.2303187626455775,0.1057973877522498,1.5983144289875917,1.0,0.0301624751820365,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_added_failures_at_most_one_pp,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,opportunity,1,0,imit_boost_g0.6,0.102504439864473,0.0622774725548933,1.82839375453532,1.0,0.0150983897625436,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,1,0,imit_boost_g0.7,-0.05286538436308974,0.0267792672150848,2.1110211742181724,0.0,0.0046439510104195,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,1,0,imit_boost_g0.8,-0.21191808649520194,0.0078394498896691,2.402238881278397,0.0,0.0004836756687332,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,opportunity,1,0,imit_boost_g0.9,-0.5009388653804534,0.0003524432856739,2.937864648916846,0.0,9.415042454499756e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,1,0,imit_boost_g0.95,-0.5344269510717268,0.0,3.0,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,1,0,imit_linear_g0.5,0.31378347427012676,0.1223874008084033,1.5825476777865752,1.0,0.0467191170777354,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_added_failures_at_most_one_pp,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,opportunity,1,0,imit_linear_g0.6,0.19462658515463616,0.0782327568275834,1.7975218999795004,1.0,0.0294090540482563,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,1,0,imit_linear_g0.7,0.03324877958269956,0.0344149555902925,2.0898278328724724,0.75,0.0098004669630767,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,1,0,imit_linear_g0.8,-0.1534241344810745,0.0086237472564829,2.4322161675648006,0.0,0.0024205913021191,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,opportunity,1,0,imit_linear_g0.9,-0.36284140585328695,0.000903947589779,2.819261391801228,0.0,0.000308265241884,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,1,0,imit_linear_g0.95,-0.451077750264834,0.0001040159909817,2.983116741838176,0.0,-1.4877414333092087e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,0,imit_boost_diag_g0.5,0.14585489203605106,0.0979170778365857,1.909823008285793,1.0,0.0235289710098323,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,0,imit_boost_diag_g0.6,0.026762446578710186,0.0585570323510083,2.1292653922585125,0.75,0.0051656892418516,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,0,imit_boost_diag_g0.7,-0.09273386605737954,0.0290343149807539,2.3509760605355066,0.0,0.002170170350934,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,0,imit_boost_diag_g0.8,-0.21304155430846494,0.0096986029675081,2.574295266363892,0.0,0.0011496972805143,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,opportunity,2,0,imit_boost_diag_g0.9,-0.38409056224386595,0.0005862767122789,2.89288921437192,0.0,-0.0001088481131175,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,0,imit_boost_diag_g0.95,-0.4345638023294023,0.0001041666666666,2.986961277754713,0.0,-7.810076766978646e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,0,imit_boost_g0.5,0.009948433202276785,0.1081044986642737,1.9549902334682667,0.5,0.0242459864199766,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,0,imit_boost_g0.6,-0.11237660878343325,0.0640214934553482,2.180260296554974,0.0,0.0076072985155661,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,0,imit_boost_g0.7,-0.2389805477864393,0.0301631694159204,2.416041072136574,0.0,0.0019282089695368,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,0,imit_boost_g0.8,-0.43347826722454563,0.0047022883884286,2.7778133255291797,0.0,-0.0003182303931038,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,0,imit_boost_g0.9,-0.5528702179893701,0.0,2.999634101719722,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,0,imit_boost_g0.95,-0.5530696860644695,0.0,3.0,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,0,imit_linear_g0.5,0.11021617122042549,0.111010278420641,1.94165825157726,1.0,0.026295270052887,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,0,imit_linear_g0.6,-0.018733847377220725,0.0669129169412973,2.1804712983836456,0.25,0.0094910716703256,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,0,imit_linear_g0.7,-0.15414619290821419,0.0312718554823455,2.431393659435955,0.0,0.0047499758596199,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,0,imit_linear_g0.8,-0.2993636151722261,0.0088753737390535,2.701811575177035,0.0,0.0038022654215845,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,0,imit_linear_g0.9,-0.4234708725695715,0.0009684606539334,2.932085329336372,0.0,-1.919087324875335e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,0,imit_linear_g0.95,-0.4549716401370778,8.431703204047218e-05,2.9900510346359,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,1,imit_boost_diag_g0.5,0.1493201063499009,0.0949437926243831,1.903099872675926,1.0,0.0218917996928172,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,1,imit_boost_diag_g0.6,0.04100885287027489,0.0661440415321406,2.104146413139215,0.75,0.0145726213297457,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,1,imit_boost_diag_g0.7,-0.08378426499216252,0.0303822567981762,2.3341270647078183,0.0,0.0075291587521679,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,1,imit_boost_diag_g0.8,-0.2136065171698982,0.0122473907323507,2.574423659389866,0.0,-0.0006355702444536,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,opportunity,2,1,imit_boost_diag_g0.9,-0.37087371405369574,0.0011803830784179,2.867096407925237,0.0,-4.0113133755931285e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,1,imit_boost_diag_g0.95,-0.4303876323217406,0.0001962245145839,2.978380594358339,0.0,-2.631326353205732e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,1,imit_boost_g0.5,0.013699399358934605,0.1020327849123383,1.947155765562884,0.5,0.0182206709970265,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,1,imit_boost_g0.6,-0.1224384367719149,0.0567522116497313,2.197491292662,0.0,0.0041137796321465,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,1,imit_boost_g0.7,-0.2543994933785023,0.0253813486719398,2.442511844362234,0.0,0.0009300908700545,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,1,imit_boost_g0.8,-0.42897713819910543,0.0079988156748194,2.7667462100251368,0.0,-0.0005752575187574,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,1,imit_boost_g0.9,-0.5415666504410754,0.0002077274615704,2.9773577066888244,0.0,0.0001141154208972,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,1,imit_boost_g0.95,-0.5540046145383679,0.0,3.0,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,1,imit_linear_g0.5,0.09792163797648656,0.1044701742803929,1.965474307924436,1.0,0.0145087485454071,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,1,imit_linear_g0.6,-0.034492094125619044,0.0589432213000264,2.209540118246265,0.25,0.0023446495391326,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,1,imit_linear_g0.7,-0.17418624297092467,0.0239364985423326,2.467119396606033,0.0,-0.0018260692135639,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp"
+V29 charged,opportunity,2,1,imit_linear_g0.8,-0.3186845530995561,0.0059330638279486,2.735894205313227,0.0,-0.001648003423823,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,1,imit_linear_g0.9,-0.4321845480287627,0.000519318653926,2.9475082657873086,0.0,-4.195567920547982e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,opportunity,2,1,imit_linear_g0.95,-0.4531608169754946,0.0001038637307852,2.986178632387169,0.0,-9.0195828048395e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,1,0,imit_boost_diag_g0.5,0.321041900478109,0.0780558404193611,1.5812976119325066,1.0,-0.0094341410996068,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,1,0,imit_boost_diag_g0.6,0.22494727746728105,0.0493299719421784,1.7500096469923256,1.0,-0.0075183492686923,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,1,0,imit_boost_diag_g0.7,0.10831686232686988,0.0259926736435172,1.9559043401900496,1.0,-0.0056513414481089,False,reference_disagreement_at_most_one_percent
+V29 charged,pamap2,1,0,imit_boost_diag_g0.8,-0.043896808699990686,0.0096434269299641,2.226292643027929,0.125,-0.0024788121094644,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,pamap2,1,0,imit_boost_diag_g0.9,-0.2874422843928397,0.0010117188854118,2.663829067377105,0.0,-0.0003537398456114,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,pamap2,1,0,imit_boost_diag_g0.95,-0.429950209578309,7.917555364941852e-05,2.921973358525781,0.0,-5.344487652353056e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,1,0,imit_boost_g0.5,0.23702503672969122,0.0843231543030162,1.555913531873683,1.0,-0.0100880217251685,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,1,0,imit_boost_g0.6,0.11623724863172213,0.0479681974654579,1.7678267035106037,1.0,-0.0060370703951338,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,1,0,imit_boost_g0.7,-0.02088493164982963,0.0229138147404827,2.0099026036516343,0.25,-0.0036138068483713,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,pamap2,1,0,imit_boost_g0.8,-0.1968284245516272,0.0068961171142284,2.3231635391103675,0.0,-0.0011529543150483,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,pamap2,1,0,imit_boost_g0.9,-0.4832680529123605,0.0001854816181839,2.8398153780783137,0.0,-0.0001289435371395,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,1,0,imit_boost_g0.95,-0.5698858132854943,0.0,2.9977038413905706,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,1,0,imit_linear_g0.5,0.28640053266591725,0.0837613961814392,1.613624909837187,1.0,-0.0079862089694391,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,1,0,imit_linear_g0.6,0.18425588292629302,0.0565021350931988,1.79372681517306,1.0,-0.0066066504676871,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,1,0,imit_linear_g0.7,0.06034270361858518,0.0310824717329325,2.0133580784756973,0.875,-0.0052599532188176,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,1,0,imit_linear_g0.8,-0.0908325701207755,0.012236318824004,2.283107275263368,0.125,-0.0028398696779079,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,pamap2,1,0,imit_linear_g0.9,-0.27223747813916566,0.0024474544927666,2.6083251219158274,0.0,-0.0009610290920833,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,pamap2,1,0,imit_linear_g0.95,-0.3800714455852081,0.0006275795526947,2.8025367398008547,0.0,-0.0003913943113209,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,2,0,imit_boost_diag_g0.5,0.253621594992672,0.0925144027851526,1.709889465017204,1.0,-0.009815028976076,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,0,imit_boost_diag_g0.6,0.15376989995430645,0.0616740532409618,1.8887994203443448,1.0,-0.007529334927885,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,0,imit_boost_diag_g0.7,0.032059343924288775,0.0331804530644712,2.107221527692956,0.75,-0.0060210640404594,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 charged,pamap2,2,0,imit_boost_diag_g0.8,-0.119583392524101,0.0128104077245327,2.380857009943446,0.0,-0.0032738807763921,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,pamap2,2,0,imit_boost_diag_g0.9,-0.32828520483386403,0.0018376229020602,2.759036450978503,0.0,-0.0006637420807401,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,2,0,imit_boost_diag_g0.95,-0.42942713473879635,0.0001541665109923,2.9435431314654563,0.0,-0.0001023544226362,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,2,0,imit_boost_g0.5,0.15640416224609577,0.0935679357168738,1.706208198680421,1.0,-0.0101795700764958,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,0,imit_boost_g0.6,0.02629608746280654,0.0557409452131394,1.938927340291392,0.75,-0.0083402148279893,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,0,imit_boost_g0.7,-0.12372674313197507,0.0245929658410029,2.2088108723170468,0.0,-0.0043328027112685,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,pamap2,2,0,imit_boost_g0.8,-0.30728981227586916,0.0058683415458547,2.540417356736145,0.0,-0.0016281187247927,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,pamap2,2,0,imit_boost_g0.9,-0.5376726252914252,0.0001264183302853,2.959677201089215,0.0,-2.0050986983145135e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,2,0,imit_boost_g0.95,-0.5595085891600546,0.0,2.999977742165242,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,2,0,imit_linear_g0.5,0.22853234913405807,0.1012986784152046,1.72533224661999,1.0,-0.0060573517495118,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,0,imit_linear_g0.6,0.12096127895884623,0.0685098920153851,1.9183614491721168,1.0,-0.0077608601025945,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,0,imit_linear_g0.7,-0.0074330255603545226,0.0400599476494527,2.149295292732619,0.5,-0.0052540852072541,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,0,imit_linear_g0.8,-0.15411874074428633,0.0180644834681158,2.41390647854588,0.0,-0.0040583128733942,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,pamap2,2,0,imit_linear_g0.9,-0.3216846699822855,0.0045370937979048,2.717131742261864,0.0,-0.0024637379494428,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,2,0,imit_linear_g0.95,-0.40875870446168405,0.0012397168355515,2.875552581975831,0.0,-0.0008447996143769,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,2,1,imit_boost_diag_g0.5,0.2531061667878116,0.0874311532678919,1.7108803300629716,1.0,-0.0118185856888864,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,1,imit_boost_diag_g0.6,0.15173784708729987,0.0589334465254045,1.8924177119718544,1.0,-0.0095312699216523,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,1,imit_boost_diag_g0.7,0.031239233890385076,0.0326006573251988,2.109024239225479,0.75,-0.0065437469294673,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 charged,pamap2,2,1,imit_boost_diag_g0.8,-0.12132418947026258,0.0123136493151321,2.384166496043479,0.0,-0.0035258961347404,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,pamap2,2,1,imit_boost_diag_g0.9,-0.3282544713102127,0.0015850477332068,2.7591738121883624,0.0,-0.0006871638206666,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,2,1,imit_boost_diag_g0.95,-0.4285576868641128,0.0001730806261383,2.9417959673817577,0.0,-0.000116217456948,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,2,1,imit_boost_g0.5,0.15790877472949838,0.093305008497651,1.7027957521000685,1.0,-0.0097670495857063,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,1,imit_boost_g0.6,0.02906128651482809,0.0547669047641793,1.933313907008709,0.75,-0.0081856423009671,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,1,imit_boost_g0.7,-0.11930223606133694,0.0243531039205273,2.200498431282444,0.0,-0.005009711158892,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,pamap2,2,1,imit_boost_g0.8,-0.3033108460455698,0.0060422918971722,2.532625873948766,0.0,-0.0018680959306355,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 charged,pamap2,2,1,imit_boost_g0.9,-0.5392670682118768,5.167374933695176e-05,2.961853551183093,0.0,-2.234252897576524e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,2,1,imit_boost_g0.95,-0.559822165387114,0.0,2.999433755705424,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,2,1,imit_linear_g0.5,0.23187827537503125,0.1017544368190718,1.7196449872862427,1.0,-0.0067887927775179,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,1,imit_linear_g0.6,0.12310001107432811,0.0690857221290137,1.914835776138978,1.0,-0.007508746197035,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,1,imit_linear_g0.7,-0.009396126600540233,0.0404554974024741,2.1536203746755165,0.5,-0.0060666672953934,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 charged,pamap2,2,1,imit_linear_g0.8,-0.16079953394654312,0.0169375310844735,2.426693821520621,0.0,-0.0037856707777274,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 charged,pamap2,2,1,imit_linear_g0.9,-0.32913902474162127,0.0038238117878447,2.7315285830742404,0.0,-0.0019917623764503,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 charged,pamap2,2,1,imit_linear_g0.95,-0.41126266700878444,0.0010431970824736,2.880260895708089,0.0,-0.0003627584860888,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,1,0,imit_boost_diag_g0.5,0.2728908272097619,0.0667321540927223,1.669312457197477,1.0,-0.0032559148825293,False,reference_disagreement_at_most_one_percent
+V29 fee_free,mhealth,1,0,imit_boost_diag_g0.6,0.1707937590439712,0.0377948943082721,1.8509375868197664,1.0,-0.003102229120222,False,reference_disagreement_at_most_one_percent
+V29 fee_free,mhealth,1,0,imit_boost_diag_g0.7,0.04814107483156993,0.0172690661683068,2.070522807476519,1.0,-0.0020694671985251,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 fee_free,mhealth,1,0,imit_boost_diag_g0.8,-0.10802645359644081,0.0047822058498502,2.3520085300514624,0.0,-0.0007851444095726,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,mhealth,1,0,imit_boost_diag_g0.9,-0.3450730631808012,0.000348929482052,2.7852238718246096,0.0,-0.0002038041106546,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,1,0,imit_boost_diag_g0.95,-0.4495806157143749,9.88837695463506e-06,2.977463356816779,0.0,-7.605656231942509e-06,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,1,0,imit_boost_g0.5,0.2869295502599013,0.0751799266444134,1.64424500789427,1.0,-0.0020634198295317,False,reference_disagreement_at_most_one_percent
+V29 fee_free,mhealth,1,0,imit_boost_g0.6,0.1614070231149296,0.0391992981075831,1.8672283262713452,1.0,-0.0022347255765724,False,reference_disagreement_at_most_one_percent
+V29 fee_free,mhealth,1,0,imit_boost_g0.7,0.018098565668876354,0.0154057614693359,2.123452795067837,0.7,-0.0013738710839956,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 fee_free,mhealth,1,0,imit_boost_g0.8,-0.1521033860966603,0.0029520355234465,2.431252171349022,0.0,-0.0004914105211931,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,mhealth,1,0,imit_boost_g0.9,-0.44443496835105445,4.707737421691326e-06,2.9674970641330107,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,1,0,imit_boost_g0.95,-0.4618357032975542,0.0,3.0,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,1,0,imit_linear_g0.5,0.2834106298848521,0.0837842432363027,1.650276477732243,1.0,-0.0012701224382866,False,reference_disagreement_at_most_one_percent
+V29 fee_free,mhealth,1,0,imit_linear_g0.6,0.16972632357772954,0.051361196647845,1.8526094282439167,1.0,-0.001736459345588,False,reference_disagreement_at_most_one_percent
+V29 fee_free,mhealth,1,0,imit_linear_g0.7,0.03293443680830821,0.0248130773148883,2.097964722879917,0.9,-0.0010130213595242,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 fee_free,mhealth,1,0,imit_linear_g0.8,-0.1251287466481763,0.0077356918548252,2.3836331396524955,0.0,-0.0011842183654077,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,mhealth,1,0,imit_linear_g0.9,-0.32120048497167697,0.000969628579167,2.7415250544162904,0.0,-0.0004595950234196,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,1,0,imit_linear_g0.95,-0.41889336491830087,0.0001355679328681,2.9209124008672576,0.0,-4.117821471843336e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,2,0,imit_boost_diag_g0.5,0.17137745205015276,0.0676325798626943,1.844863953260784,1.0,0.001183133109355,False,reference_disagreement_at_most_one_percent
+V29 fee_free,mhealth,2,0,imit_boost_diag_g0.6,0.06835980530116725,0.0384566227581858,2.0287783267643453,1.0,-0.0019134786089056,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 fee_free,mhealth,2,0,imit_boost_diag_g0.7,-0.04567767747305673,0.0174922730027535,2.2338051722966057,0.0,-0.0016532630715502,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 fee_free,mhealth,2,0,imit_boost_diag_g0.8,-0.18325332678972628,0.0055595797318069,2.482928610261528,0.0,-0.0011447449454372,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,mhealth,2,0,imit_boost_diag_g0.9,-0.3913818796517845,0.000537737522947,2.8628825898264965,0.0,-0.0002955242862323,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,2,0,imit_boost_diag_g0.95,-0.4596170741581187,2.981662268818447e-05,2.987630599112068,0.0,-1.5987701534575516e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,2,0,imit_boost_g0.5,0.15858157992162958,0.0653966057017722,1.86781073271479,1.0,-0.0032281951051738,False,reference_disagreement_at_most_one_percent
+V29 fee_free,mhealth,2,0,imit_boost_g0.6,0.03180227001761926,0.0308398928813899,2.094380512498057,0.9,-0.001994611729673,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 fee_free,mhealth,2,0,imit_boost_g0.7,-0.11876357317145048,0.009284122251034,2.365261255935445,0.0,-0.0011881664593748,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,mhealth,2,0,imit_boost_g0.8,-0.25850529590376636,0.0012282310480768,2.61883362481568,0.0,-0.000184545952602,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,mhealth,2,0,imit_boost_g0.9,-0.4663718698670243,0.0,2.9999895659432387,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,2,0,imit_boost_g0.95,-0.46637734383803386,0.0,3.0,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,2,0,imit_linear_g0.5,0.17535798693982318,0.0801622843362105,1.837519750354677,1.0,0.0016516152076536,False,reference_disagreement_at_most_one_percent
+V29 fee_free,mhealth,2,0,imit_linear_g0.6,0.052420289395867736,0.0449244158933627,2.057049283498923,0.9,-0.0002969572255562,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 fee_free,mhealth,2,0,imit_linear_g0.7,-0.07885845868419339,0.019995446331586,2.2932777847543213,0.0,-0.0007916375866508,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 fee_free,mhealth,2,0,imit_linear_g0.8,-0.22616216567766045,0.0057100194565481,2.560676697360178,0.0,-0.0007363792229854,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,mhealth,2,0,imit_linear_g0.9,-0.38978054194122835,0.0005141305518059,2.8599166928350157,0.0,-9.336243619386743e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,2,0,imit_linear_g0.95,-0.4485902890936653,6.922840095830034e-05,2.967560522116452,0.0,-4.8191115176872414e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,2,1,imit_boost_diag_g0.5,0.17020274102593735,0.0669911663327374,1.847190653039828,1.0,-0.0025131330172683,False,reference_disagreement_at_most_one_percent
+V29 fee_free,mhealth,2,1,imit_boost_diag_g0.6,0.06729569331632812,0.0391566784809704,2.0307244435275504,1.0,-0.0017802661513342,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 fee_free,mhealth,2,1,imit_boost_diag_g0.7,-0.04730335818449505,0.0188121534226903,2.236709472253,0.1,-0.0017773326717672,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 fee_free,mhealth,2,1,imit_boost_diag_g0.8,-0.18652488862460115,0.0056006602514717,2.4884485342001224,0.0,-0.0011562825394528,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,mhealth,2,1,imit_boost_diag_g0.9,-0.3940250279507458,0.0005300515364827,2.867328208942007,0.0,-0.0001335775625237,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,2,1,imit_boost_diag_g0.95,-0.45942253108314945,1.311454826366573e-05,2.9870440143671546,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,2,1,imit_boost_g0.5,0.15560936891016108,0.0642962417825436,1.87311762216019,1.0,-0.0030559278251524,False,reference_disagreement_at_most_one_percent
+V29 fee_free,mhealth,2,1,imit_boost_g0.6,0.02803872758124648,0.0310290776520752,2.1004425128675703,0.8,-0.0022684228317654,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 fee_free,mhealth,2,1,imit_boost_g0.7,-0.1220853352603748,0.0093504079199941,2.3709382686080467,0.0,-0.0012092322930775,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,mhealth,2,1,imit_boost_g0.8,-0.28676559929733547,0.0013590939169015,2.669119847921912,0.0,-0.0003366856166697,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,mhealth,2,1,imit_boost_g0.9,-0.4647999921444872,0.0,2.996933177833072,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,2,1,imit_boost_g0.95,-0.46643814398793837,0.0,3.0,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,2,1,imit_linear_g0.5,0.17121245854720935,0.0795296321020544,1.845106941583873,1.0,0.0009163334325956,False,reference_disagreement_at_most_one_percent
+V29 fee_free,mhealth,2,1,imit_linear_g0.6,0.04495181338856824,0.0441276436785178,2.070204899102106,0.9,-0.0009285092107162,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 fee_free,mhealth,2,1,imit_linear_g0.7,-0.08784970307792195,0.0188549075549463,2.3090632793891164,0.0,-0.0002402119880215,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 fee_free,mhealth,2,1,imit_linear_g0.8,-0.23396921906182877,0.0054660588127429,2.573887097041612,0.0,-0.0004793188999808,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,mhealth,2,1,imit_linear_g0.9,-0.39187879432215533,0.0006339898867014,2.8624352359452354,0.0,-0.0001476077498182,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,mhealth,2,1,imit_linear_g0.95,-0.448301471021634,4.381968930366915e-05,2.9664548686331127,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,1,0,imit_boost_diag_g0.5,0.32336935836200364,0.0935399910179197,1.5918083541442267,1.0,0.0205384966483035,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_added_failures_at_most_one_pp,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,opportunity,1,0,imit_boost_diag_g0.6,0.21027794135158484,0.0534295375971929,1.795800260618686,1.0,0.0090357024493231,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,1,0,imit_boost_diag_g0.7,0.08400741529913369,0.0266257155370843,2.024417861339078,1.0,0.0023086423092671,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,1,0,imit_boost_diag_g0.8,-0.054453097946945084,0.0093308103611182,2.277785099080898,0.0,-0.0011463740635857,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,opportunity,1,0,imit_boost_diag_g0.9,-0.31044781733244653,0.0014961484003046,2.749986819237254,0.0,-0.0003777746750293,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,1,0,imit_boost_diag_g0.95,-0.4282060290397294,5.184570717544587e-05,2.968597659921051,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,1,0,imit_boost_g0.5,0.3195141978541124,0.1057973877522498,1.5983144289875917,1.0,0.0301624751820365,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_added_failures_at_most_one_pp,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,opportunity,1,0,imit_boost_g0.6,0.19169987507300779,0.0622774725548933,1.82839375453532,1.0,0.0150983897625436,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,1,0,imit_boost_g0.7,0.03633005084544516,0.0267792672150848,2.1110211742181724,0.75,0.0046439510104195,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,1,0,imit_boost_g0.8,-0.12272265128666726,0.0078394498896691,2.402238881278397,0.0,0.0004836756687332,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,opportunity,1,0,imit_boost_g0.9,-0.4117434301719183,0.0003524432856739,2.937864648916846,0.0,9.415042454499756e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,1,0,imit_boost_g0.95,-0.4452315158631919,0.0,3.0,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,1,0,imit_linear_g0.5,0.32877386581539747,0.1223874008084033,1.5825476777865752,1.0,0.0467191170777354,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_added_failures_at_most_one_pp,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,opportunity,1,0,imit_linear_g0.6,0.20961697669990698,0.0782327568275834,1.7975218999795004,1.0,0.0294090540482563,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,1,0,imit_linear_g0.7,0.04823917112797016,0.0344149555902925,2.0898278328724724,0.75,0.0098004669630767,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,1,0,imit_linear_g0.8,-0.1384337429358038,0.0086237472564829,2.4322161675648006,0.0,0.0024205913021191,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,opportunity,1,0,imit_linear_g0.9,-0.3478510143080158,0.000903947589779,2.819261391801228,0.0,0.000308265241884,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,1,0,imit_linear_g0.95,-0.4360873587195635,0.0001040159909817,2.983116741838176,0.0,-1.4877414333092087e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,0,imit_boost_diag_g0.5,0.14585489203605106,0.0979170778365857,1.909823008285793,1.0,0.0235289710098323,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,0,imit_boost_diag_g0.6,0.026762446578710186,0.0585570323510083,2.1292653922585125,0.75,0.0051656892418516,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,0,imit_boost_diag_g0.7,-0.09273386605737954,0.0290343149807539,2.3509760605355066,0.0,0.002170170350934,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,0,imit_boost_diag_g0.8,-0.21304155430846494,0.0096986029675081,2.574295266363892,0.0,0.0011496972805143,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,opportunity,2,0,imit_boost_diag_g0.9,-0.38409056224386595,0.0005862767122789,2.89288921437192,0.0,-0.0001088481131175,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,0,imit_boost_diag_g0.95,-0.4345638023294023,0.0001041666666666,2.986961277754713,0.0,-7.810076766978646e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,0,imit_boost_g0.5,0.12147879756902757,0.1081044986642737,1.9549902334682667,1.0,0.0242459864199766,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,0,imit_boost_g0.6,-0.0008462444166823513,0.0640214934553482,2.180260296554974,0.5,0.0076072985155661,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,0,imit_boost_g0.7,-0.1274501834196884,0.0301631694159204,2.416041072136574,0.0,0.0019282089695368,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,0,imit_boost_g0.8,-0.32194790285779473,0.0047022883884286,2.7778133255291797,0.0,-0.0003182303931038,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,0,imit_boost_g0.9,-0.4413398536226192,0.0,2.999634101719722,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,0,imit_boost_g0.95,-0.4415393216977188,0.0,3.0,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,0,imit_linear_g0.5,0.12896022271964758,0.111010278420641,1.94165825157726,1.0,0.026295270052887,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,0,imit_linear_g0.6,1.0204122001478133e-05,0.0669129169412973,2.1804712983836456,0.25,0.0094910716703256,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,0,imit_linear_g0.7,-0.13540214140899187,0.0312718554823455,2.431393659435955,0.0,0.0047499758596199,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,0,imit_linear_g0.8,-0.280619563673004,0.0088753737390535,2.701811575177035,0.0,0.0038022654215845,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,0,imit_linear_g0.9,-0.4047268210703494,0.0009684606539334,2.932085329336372,0.0,-1.919087324875335e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,0,imit_linear_g0.95,-0.4362275886378555,8.431703204047218e-05,2.9900510346359,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,1,imit_boost_diag_g0.5,0.1493201063499009,0.0949437926243831,1.903099872675926,1.0,0.0218917996928172,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,1,imit_boost_diag_g0.6,0.04100885287027489,0.0661440415321406,2.104146413139215,0.75,0.0145726213297457,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,1,imit_boost_diag_g0.7,-0.08378426499216252,0.0303822567981762,2.3341270647078183,0.0,0.0075291587521679,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,1,imit_boost_diag_g0.8,-0.2136065171698982,0.0122473907323507,2.574423659389866,0.0,-0.0006355702444536,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 fee_free,opportunity,2,1,imit_boost_diag_g0.9,-0.37087371405369574,0.0011803830784179,2.867096407925237,0.0,-4.0113133755931285e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,1,imit_boost_diag_g0.95,-0.4303876323217406,0.0001962245145839,2.978380594358339,0.0,-2.631326353205732e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,1,imit_boost_g0.5,0.12574236112008252,0.1020327849123383,1.947155765562884,1.0,0.0182206709970265,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,1,imit_boost_g0.6,-0.010395475010766875,0.0567522116497313,2.197491292662,0.5,0.0041137796321465,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,1,imit_boost_g0.7,-0.14235653161735473,0.0253813486719398,2.442511844362234,0.0,0.0009300908700545,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,1,imit_boost_g0.8,-0.3169341764379576,0.0079988156748194,2.7667462100251368,0.0,-0.0005752575187574,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,1,imit_boost_g0.9,-0.42952368867992763,0.0002077274615704,2.9773577066888244,0.0,0.0001141154208972,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,1,imit_boost_g0.95,-0.4419616527772201,0.0,3.0,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,1,imit_linear_g0.5,0.11675183778171949,0.1044701742803929,1.965474307924436,1.0,0.0145087485454071,False,"reference_disagreement_at_most_one_percent,known_macro_f1_drop_at_most_half_pp,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,1,imit_linear_g0.6,-0.015661894320386338,0.0589432213000264,2.209540118246265,0.25,0.0023446495391326,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp,two_consecutive_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,1,imit_linear_g0.7,-0.15535604316569174,0.0239364985423326,2.467119396606033,0.0,-0.0018260692135639,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_added_failures_at_most_one_pp"
+V29 fee_free,opportunity,2,1,imit_linear_g0.8,-0.2998543532943232,0.0059330638279486,2.735894205313227,0.0,-0.001648003423823,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,1,imit_linear_g0.9,-0.41335434822353,0.000519318653926,2.9475082657873086,0.0,-4.195567920547982e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,opportunity,2,1,imit_linear_g0.95,-0.43433061717026167,0.0001038637307852,2.986178632387169,0.0,-9.0195828048395e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,1,0,imit_boost_diag_g0.5,0.321041900478109,0.0780558404193611,1.5812976119325066,1.0,-0.0094341410996068,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,1,0,imit_boost_diag_g0.6,0.22494727746728105,0.0493299719421784,1.7500096469923256,1.0,-0.0075183492686923,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,1,0,imit_boost_diag_g0.7,0.10831686232686988,0.0259926736435172,1.9559043401900496,1.0,-0.0056513414481089,False,reference_disagreement_at_most_one_percent
+V29 fee_free,pamap2,1,0,imit_boost_diag_g0.8,-0.043896808699990686,0.0096434269299641,2.226292643027929,0.125,-0.0024788121094644,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,pamap2,1,0,imit_boost_diag_g0.9,-0.2874422843928397,0.0010117188854118,2.663829067377105,0.0,-0.0003537398456114,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,pamap2,1,0,imit_boost_diag_g0.95,-0.429950209578309,7.917555364941852e-05,2.921973358525781,0.0,-5.344487652353056e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,1,0,imit_boost_g0.5,0.3353380922659822,0.0843231543030162,1.555913531873683,1.0,-0.0100880217251685,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,1,0,imit_boost_g0.6,0.21455030416801324,0.0479681974654579,1.7678267035106037,1.0,-0.0060370703951338,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,1,0,imit_boost_g0.7,0.07742812388646136,0.0229138147404827,2.0099026036516343,1.0,-0.0036138068483713,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 fee_free,pamap2,1,0,imit_boost_g0.8,-0.09851536901533597,0.0068961171142284,2.3231635391103675,0.0,-0.0011529543150483,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,pamap2,1,0,imit_boost_g0.9,-0.38495499737606953,0.0001854816181839,2.8398153780783137,0.0,-0.0001289435371395,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,1,0,imit_boost_g0.95,-0.4715727577492028,0.0,2.9977038413905706,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,1,0,imit_linear_g0.5,0.3029232526129123,0.0837613961814392,1.613624909837187,1.0,-0.0079862089694391,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,1,0,imit_linear_g0.6,0.20077860287328797,0.0565021350931988,1.79372681517306,1.0,-0.0066066504676871,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,1,0,imit_linear_g0.7,0.07686542356558024,0.0310824717329325,2.0133580784756973,0.875,-0.0052599532188176,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,1,0,imit_linear_g0.8,-0.07430985017378022,0.012236318824004,2.283107275263368,0.125,-0.0028398696779079,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 fee_free,pamap2,1,0,imit_linear_g0.9,-0.2557147581921706,0.0024474544927666,2.6083251219158274,0.0,-0.0009610290920833,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,pamap2,1,0,imit_linear_g0.95,-0.36354872563821283,0.0006275795526947,2.8025367398008547,0.0,-0.0003913943113209,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,2,0,imit_boost_diag_g0.5,0.253621594992672,0.0925144027851526,1.709889465017204,1.0,-0.009815028976076,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,0,imit_boost_diag_g0.6,0.15376989995430645,0.0616740532409618,1.8887994203443448,1.0,-0.007529334927885,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,0,imit_boost_diag_g0.7,0.032059343924288775,0.0331804530644712,2.107221527692956,0.75,-0.0060210640404594,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 fee_free,pamap2,2,0,imit_boost_diag_g0.8,-0.119583392524101,0.0128104077245327,2.380857009943446,0.0,-0.0032738807763921,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 fee_free,pamap2,2,0,imit_boost_diag_g0.9,-0.32828520483386403,0.0018376229020602,2.759036450978503,0.0,-0.0006637420807401,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,2,0,imit_boost_diag_g0.95,-0.42942713473879635,0.0001541665109923,2.9435431314654563,0.0,-0.0001023544226362,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,2,0,imit_boost_g0.5,0.25569864919313545,0.0935679357168738,1.706208198680421,1.0,-0.0101795700764958,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,0,imit_boost_g0.6,0.1255905744098461,0.0557409452131394,1.938927340291392,1.0,-0.0083402148279893,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,0,imit_boost_g0.7,-0.024432256184935275,0.0245929658410029,2.2088108723170468,0.125,-0.0043328027112685,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 fee_free,pamap2,2,0,imit_boost_g0.8,-0.20799532532882936,0.0058683415458547,2.540417356736145,0.0,-0.0016281187247927,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,pamap2,2,0,imit_boost_g0.9,-0.43837813834438544,0.0001264183302853,2.959677201089215,0.0,-2.0050986983145135e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,2,0,imit_boost_g0.95,-0.46021410221301484,0.0,2.999977742165242,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,2,0,imit_linear_g0.5,0.24522001071834132,0.1012986784152046,1.72533224661999,1.0,-0.0060573517495118,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,0,imit_linear_g0.6,0.1376489405431296,0.0685098920153851,1.9183614491721168,1.0,-0.0077608601025945,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,0,imit_linear_g0.7,0.009254636023929064,0.0400599476494527,2.149295292732619,0.75,-0.0052540852072541,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,0,imit_linear_g0.8,-0.13743107916000286,0.0180644834681158,2.41390647854588,0.0,-0.0040583128733942,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 fee_free,pamap2,2,0,imit_linear_g0.9,-0.30499700839800203,0.0045370937979048,2.717131742261864,0.0,-0.0024637379494428,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,2,0,imit_linear_g0.95,-0.3920710428774006,0.0012397168355515,2.875552581975831,0.0,-0.0008447996143769,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,2,1,imit_boost_diag_g0.5,0.2531061667878116,0.0874311532678919,1.7108803300629716,1.0,-0.0118185856888864,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,1,imit_boost_diag_g0.6,0.15173784708729987,0.0589334465254045,1.8924177119718544,1.0,-0.0095312699216523,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,1,imit_boost_diag_g0.7,0.031239233890385076,0.0326006573251988,2.109024239225479,0.75,-0.0065437469294673,False,"ten_percent_bytes_saved,reference_disagreement_at_most_one_percent"
+V29 fee_free,pamap2,2,1,imit_boost_diag_g0.8,-0.12132418947026258,0.0123136493151321,2.384166496043479,0.0,-0.0035258961347404,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 fee_free,pamap2,2,1,imit_boost_diag_g0.9,-0.3282544713102127,0.0015850477332068,2.7591738121883624,0.0,-0.0006871638206666,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,2,1,imit_boost_diag_g0.95,-0.4285576868641128,0.0001730806261383,2.9417959673817577,0.0,-0.000116217456948,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,2,1,imit_boost_g0.5,0.25755005337092396,0.093305008497651,1.7027957521000685,1.0,-0.0097670495857063,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,1,imit_boost_g0.6,0.12870256515625356,0.0547669047641793,1.933313907008709,1.0,-0.0081856423009671,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,1,imit_boost_g0.7,-0.019660957419911362,0.0243531039205273,2.200498431282444,0.125,-0.005009711158892,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 fee_free,pamap2,2,1,imit_boost_g0.8,-0.20366956740414444,0.0060422918971722,2.532625873948766,0.0,-0.0018680959306355,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive"
+V29 fee_free,pamap2,2,1,imit_boost_g0.9,-0.4396257895704512,5.167374933695176e-05,2.961853551183093,0.0,-2.234252897576524e-05,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,2,1,imit_boost_g0.95,-0.46018088674568824,0.0,2.999433755705424,0.0,0.0,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,2,1,imit_linear_g0.5,0.24862421957513825,0.1017544368190718,1.7196449872862427,1.0,-0.0067887927775179,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,1,imit_linear_g0.6,0.13984595527443522,0.0690857221290137,1.914835776138978,1.0,-0.007508746197035,False,"reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,1,imit_linear_g0.7,0.007349817599566988,0.0404554974024741,2.1536203746755165,0.625,-0.0060666672953934,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent,first_correct_paired_p95_extra_at_most_one_window,two_consecutive_correct_paired_p95_extra_at_most_one_window"
+V29 fee_free,pamap2,2,1,imit_linear_g0.8,-0.1440535897464359,0.0169375310844735,2.426693821520621,0.0,-0.0037856707777274,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,reference_disagreement_at_most_one_percent"
+V29 fee_free,pamap2,2,1,imit_linear_g0.9,-0.31239308054151405,0.0038238117878447,2.7315285830742404,0.0,-0.0019917623764503,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V29 fee_free,pamap2,2,1,imit_linear_g0.95,-0.3945167228086772,0.0010431970824736,2.880260895708089,0.0,-0.0003627584860888,False,"ten_percent_bytes_saved,seventyfive_percent_subjects_positive,ten_percent_fewer_full_model_calls"
+V20,mhealth,1,0,complete_rice2,-0.003990637920874063,0.0,3.0,0.2,0.0,,
+V20,mhealth,1,0,complete_rice3,0.0,0.0,3.0,0.0,0.0,,
+V20,mhealth,1,0,direct_t0.01,-0.1874818237672009,0.0017529990049267,2.4613911534707484,0.0,-0.00037724529519,,
+V20,mhealth,1,0,direct_t0.05,-0.017220683216231603,0.0128319117037762,2.1538095482468704,0.3,-0.0014091897333805,,
+V20,mhealth,1,0,direct_t0.1,0.08443237259264813,0.0271138428237947,1.971255595203738,1.0,-0.002019354694281,,
+V20,mhealth,1,0,isotonic_t0.01,-0.23648320149138424,0.0014931418964414,2.51973074459188,0.0,-8.514899110064061e-05,,
+V20,mhealth,1,0,isotonic_t0.05,-0.09961638260776251,0.0068635774702808,2.271945851245163,0.0,-0.000745322264168,,
+V20,mhealth,1,0,isotonic_t0.1,0.004634510865000441,0.018297424169013,2.0849822112054537,0.6,-0.0017826983315784,,
+V20,mhealth,1,0,periodic_h1,-0.004193709681025393,0.0,3.0,0.2,0.0,,
+V20,mhealth,1,0,periodic_h16,0.6141360024325786,0.2671749642313009,1.125340417290864,1.0,0.0302975956369787,,
+V20,mhealth,1,0,periodic_h2,0.31669437250715404,0.0732715440241829,2.000314055294294,1.0,-0.0002332895846925,,
+V20,mhealth,1,0,periodic_h4,0.4850431121743395,0.1455718351054165,1.5004179626994367,1.0,-0.0001883784567301,,
+V20,mhealth,1,0,periodic_h8,0.5707173532191987,0.2116529490484298,1.25036879071517,1.0,0.0057126745025147,,
+V20,mhealth,1,0,platt_t0.01,-0.2500698294196646,0.0009797468655518,2.6008596205046333,0.0,-9.830850082033146e-05,,
+V20,mhealth,1,0,platt_t0.05,-0.07424929801994606,0.0081838531911142,2.282189056283943,0.1,-0.0006842589110198,,
+V20,mhealth,1,0,platt_t0.1,0.03395529691262711,0.0198575830310882,2.0871442984346027,0.9,-0.001679383653821,,
+V20,mhealth,1,0,survival_t0.01,-0.3890329331106308,0.0005155702845129,2.8558270513920503,0.0,-6.431920295810814e-05,,
+V20,mhealth,1,0,survival_t0.05,-0.14198062961825397,0.0062189843605689,2.4051214150917497,0.0,-0.0010620788636938,,
+V20,mhealth,1,0,survival_t0.1,0.01643681540531261,0.0210149102441216,2.11857642162748,0.8,-0.0015533438526064,,
+V20,mhealth,2,0,complete_rice2,-0.016849628888964796,0.0,3.0,0.0,0.0,,
+V20,mhealth,2,0,complete_rice3,0.0,0.0,3.0,0.0,0.0,,
+V20,mhealth,2,0,direct_t0.01,-0.2685419584464235,0.0011264715517357,2.5971507159847547,0.0,-3.694618562000984e-05,,
+V20,mhealth,2,0,direct_t0.05,-0.11758258645398345,0.0098945883495092,2.3231374007018823,0.0,-0.0009978707296944,,
+V20,mhealth,2,0,direct_t0.1,-0.019764245869735575,0.0241782951613782,2.146833330320663,0.3,-0.0013086528427556,,
+V20,mhealth,2,0,isotonic_t0.01,-0.29634193462715586,0.001380194090448,2.614983424762902,0.0,-0.0004781476207465,,
+V20,mhealth,2,0,isotonic_t0.05,-0.193297968403491,0.0058260872399733,2.4277615363306846,0.0,-0.0008620188783658,,
+V20,mhealth,2,0,isotonic_t0.1,-0.09682310003691019,0.0149899184790625,2.253093165812237,0.0,-0.0016427492779728,,
+V20,mhealth,2,0,periodic_h1,-0.017076404195767392,0.0,3.0,0.0,0.0,,
+V20,mhealth,2,0,periodic_h16,0.6099167608996467,0.3217287119963685,1.12575623962563,1.0,0.0780172640968026,,
+V20,mhealth,2,0,periodic_h2,0.3134164419691673,0.1025109942749435,2.000521696281901,1.0,-0.0003413323085969,,
+V20,mhealth,2,0,periodic_h4,0.48158919894542107,0.1863353352859384,1.500580368409276,1.0,0.0037868755757019,,
+V20,mhealth,2,0,periodic_h8,0.5668107432552398,0.252905575316541,1.2506021521170405,1.0,0.0275481200750333,,
+V20,mhealth,2,0,platt_t0.01,-0.3196152877797378,0.0004573803184057,2.7187154513057696,0.0,-0.0001540441799873,,
+V20,mhealth,2,0,platt_t0.05,-0.16533464252288654,0.0064866544418303,2.438271084834764,0.0,-0.0004983294172405,,
+V20,mhealth,2,0,platt_t0.1,-0.06745027447405016,0.0156218727676804,2.261246194314781,0.1,-0.0015326379605197,,
+V20,mhealth,2,0,survival_t0.01,-0.45669027358318326,3.7502174807874286e-05,2.970742066848332,0.0,0.0,,
+V20,mhealth,2,0,survival_t0.05,-0.2833508225794079,0.0029513064888513,2.6531978506284264,0.0,-0.0004209301263569,,
+V20,mhealth,2,0,survival_t0.1,-0.12310577716751903,0.0136764331788294,2.3617646830189054,0.0,-0.0008315176715787,,
+V20,mhealth,2,1,complete_rice2,-0.016951142178083245,0.0,3.0,0.0,0.0,,
+V20,mhealth,2,1,complete_rice3,0.0,0.0,3.0,0.0,0.0,,
+V20,mhealth,2,1,direct_t0.01,-0.2671301279941214,0.0013424567326018,2.594406141339293,0.0,-0.0001857450997678,,
+V20,mhealth,2,1,direct_t0.05,-0.11745065811556477,0.0094397579955281,2.3225311786380103,0.0,-0.0015122617513786,,
+V20,mhealth,2,1,direct_t0.1,-0.02047396145126168,0.0227511248975335,2.147790654736658,0.3,-0.001212954863687,,
+V20,mhealth,2,1,isotonic_t0.01,-0.28661150636813937,0.0018406811287868,2.597932620431608,0.0,-0.0003647743308527,,
+V20,mhealth,2,1,isotonic_t0.05,-0.197236584328631,0.0052181755971372,2.4355440195960467,0.0,-0.0011910138882821,,
+V20,mhealth,2,1,isotonic_t0.1,-0.0932776262251791,0.0148860474331133,2.2476161977318103,0.0,-0.0020126444155432,,
+V20,mhealth,2,1,periodic_h1,-0.0171780506446495,0.0,3.0,0.0,0.0,,
+V20,mhealth,2,1,periodic_h16,0.6100809946945315,0.321839316949385,1.125835323931707,1.0,0.0792652274023733,,
+V20,mhealth,2,1,periodic_h2,0.3134591189863809,0.1032256398974615,2.000407646582392,1.0,-0.0020691146759555,,
+V20,mhealth,2,1,periodic_h4,0.4815862959271586,0.1880617393310821,1.500731002632589,1.0,0.0013885119161203,,
+V20,mhealth,2,1,periodic_h8,0.5669400314811406,0.2558205051519556,1.2507595884174465,1.0,0.0246878193173132,,
+V20,mhealth,2,1,platt_t0.01,-0.32316869637791323,0.0008593998938664,2.7250452184847624,0.0,-0.0002128552557379,,
+V20,mhealth,2,1,platt_t0.05,-0.16914769219820847,0.0055032898920756,2.4450017267765225,0.0,-0.0010264317380877,,
+V20,mhealth,2,1,platt_t0.1,-0.07092338683123978,0.0139121718681092,2.267306477689201,0.1,-0.0016362916757302,,
+V20,mhealth,2,1,survival_t0.01,-0.4561631606439158,5.043288414416375e-05,2.969551198129519,0.0,0.0,,
+V20,mhealth,2,1,survival_t0.05,-0.2837594298060768,0.003281884138549,2.653765773218184,0.0,-0.0001813750035838,,
+V20,mhealth,2,1,survival_t0.1,-0.127301388005578,0.0128604414683728,2.369080982875373,0.0,-0.0010060442535898,,
+V20,pamap2,1,0,complete_rice2,0.0,0.0,3.0,0.0,0.0,,
+V20,pamap2,1,0,complete_rice3,-0.01425069081856889,0.0,3.0,0.0,0.0,,
+V20,pamap2,1,0,direct_t0.01,-0.18236426730300925,0.0025950372278014,2.4471444470604817,0.0,-0.0013395462168062,,
+V20,pamap2,1,0,direct_t0.05,-0.0012106495355692637,0.0146250072743512,2.1243407557110605,0.5,-0.0045364467719354,,
+V20,pamap2,1,0,direct_t0.1,0.10197426818837785,0.0290454710883498,1.9410548600653488,0.875,-0.0066424798761651,,
+V20,pamap2,1,0,isotonic_t0.01,-0.21525414428581802,0.0024059211952705,2.486814494371899,0.0,-0.0015343348542338,,
+V20,pamap2,1,0,isotonic_t0.05,-0.09569425933806008,0.0072118883049716,2.273181315755376,0.125,-0.00342582451033,,
+V20,pamap2,1,0,isotonic_t0.1,0.02696685096390583,0.0201161681302132,2.0553783132846184,0.75,-0.006310452297019,,
+V20,pamap2,1,0,periodic_h1,-0.00017231110025828222,0.0,3.0,0.0,0.0,,
+V20,pamap2,1,0,periodic_h16,0.612885076369048,0.2324447754172093,1.128324131478393,1.0,0.0095691610782923,,
+V20,pamap2,1,0,periodic_h2,0.3165407031153882,0.0604867207619339,2.001991196019271,1.0,-0.0010027630045669,,
+V20,pamap2,1,0,periodic_h4,0.4843929923776127,0.123172246605742,1.5029092539907665,1.0,-0.0030993679337601,,
+V20,pamap2,1,0,periodic_h8,0.5697744468210719,0.1770214554940893,1.2530762419349972,1.0,-0.0026159145390241,,
+V20,pamap2,1,0,platt_t0.01,-0.2731717816244741,0.0005548944905486,2.631334885487248,0.0,-0.0004100660135062,,
+V20,pamap2,1,0,platt_t0.05,-0.09026685988321748,0.0065924252268151,2.3044683621620163,0.125,-0.0030876664023965,,
+V20,pamap2,1,0,platt_t0.1,0.02940082289798862,0.0169141719559565,2.0915217306885143,0.75,-0.0058006868799972,,
+V20,pamap2,1,0,survival_t0.01,-0.36092806298313174,0.0008114353664883,2.78952741708453,0.0,-0.0007117369297217,,
+V20,pamap2,1,0,survival_t0.05,-0.1463930319731339,0.0066117161321063,2.405653238579056,0.0,-0.0033558092691483,,
+V20,pamap2,1,0,survival_t0.1,0.013335042550643328,0.0195864977815042,2.120471975407449,0.625,-0.0062022185290574,,
+V20,pamap2,2,0,complete_rice2,-0.004371414002961593,0.0,3.0,0.25,0.0,,
+V20,pamap2,2,0,complete_rice3,0.0,0.0,3.0,0.0,0.0,,
+V20,pamap2,2,0,direct_t0.01,-0.26908215782395684,0.0026815286232126,2.6219604868035726,0.0,-0.0018111668319954,,
+V20,pamap2,2,0,direct_t0.05,-0.09730211554956103,0.0161308222545363,2.3117084689432708,0.0,-0.0056437295744098,,
+V20,pamap2,2,0,direct_t0.1,0.009889224224803317,0.0328504401317878,2.118732875792076,0.75,-0.0091063516660089,,
+V20,pamap2,2,0,isotonic_t0.01,-0.2912471030804633,0.0023647127592564,2.644260035875103,0.0,-0.001168992393155,,
+V20,pamap2,2,0,isotonic_t0.05,-0.20251200714605289,0.0069475112968033,2.4830610424294526,0.0,-0.0033373513529487,,
+V20,pamap2,2,0,isotonic_t0.1,-0.09616415561048419,0.0182326242388297,2.291847627910266,0.0,-0.0055876409679176,,
+V20,pamap2,2,0,periodic_h1,-0.004545445236169732,0.0,3.0,0.25,0.0,,
+V20,pamap2,2,0,periodic_h16,0.6094523593729746,0.2833145643198362,1.131299730182553,1.0,0.0297942510243557,,
+V20,pamap2,2,0,periodic_h2,0.3194408076301074,0.0872910191422737,2.0034493495043275,1.0,-0.0023437218233193,,
+V20,pamap2,2,0,periodic_h4,0.48412992809036093,0.1555466226308856,1.504962749648186,1.0,-0.0023550793062388,,
+V20,pamap2,2,0,periodic_h8,0.5672833594935554,0.2209563918451495,1.255980689512636,1.0,0.0093524781012986,,
+V20,pamap2,2,0,platt_t0.01,-0.3467463869042937,0.0004744945380336,2.784118222833659,0.0,-0.0003932773943637,,
+V20,pamap2,2,0,platt_t0.05,-0.18900200969479686,0.0060455324501373,2.498779612597684,0.0,-0.0032589971136631,,
+V20,pamap2,2,0,platt_t0.1,-0.07421848987246804,0.0174958094895277,2.291799269215221,0.125,-0.0064426385900355,,
+V20,pamap2,2,0,survival_t0.01,-0.4028497295684754,0.0005715197293012,2.88636927571092,0.0,-0.0005045878672824,,
+V20,pamap2,2,0,survival_t0.05,-0.23380221961414427,0.0067897179317015,2.5802188400378183,0.0,-0.0031368932670822,,
+V20,pamap2,2,0,survival_t0.1,-0.08920171714161773,0.0208902804361392,2.31928769529804,0.0,-0.0064313832446379,,
+V20,pamap2,2,1,complete_rice2,-0.004519009334277069,0.0,3.0,0.25,0.0,,
+V20,pamap2,2,1,complete_rice3,0.0,0.0,3.0,0.0,0.0,,
+V20,pamap2,2,1,direct_t0.01,-0.25898780656771225,0.0029979575586647,2.603030894617704,0.0,-0.0014927097963769,,
+V20,pamap2,2,1,direct_t0.05,-0.09288252643134909,0.0165954551495878,2.303697532874455,0.0,-0.0049726224294476,,
+V20,pamap2,2,1,direct_t0.1,0.015069346158736674,0.0328015214182435,2.1094298535315046,0.625,-0.0082788645833214,,
+V20,pamap2,2,1,isotonic_t0.01,-0.2977831281155332,0.0025165374644826,2.654629615946932,0.0,-0.0013643209040102,,
+V20,pamap2,2,1,isotonic_t0.05,-0.1759513615219599,0.0076655565429845,2.4339225378560427,0.0,-0.003237919091025,,
+V20,pamap2,2,1,isotonic_t0.1,-0.09816122298913421,0.0166201434413189,2.2941819745270733,0.125,-0.0053423012303131,,
+V20,pamap2,2,1,periodic_h1,-0.004693648381555171,0.0,3.0,0.25,0.0,,
+V20,pamap2,2,1,periodic_h16,0.6093234277182722,0.2829403934261126,1.131325451602416,1.0,0.0284930325880168,,
+V20,pamap2,2,1,periodic_h2,0.3198701715050549,0.0855615477003028,2.0027726713724743,1.0,-0.0033293977930923,,
+V20,pamap2,2,1,periodic_h4,0.4841546143989822,0.1540817954210515,1.5047809436602604,1.0,-0.0039122123415361,,
+V20,pamap2,2,1,periodic_h8,0.5671446977809358,0.2214021284559944,1.2558140777073907,1.0,0.0076842253098579,,
+V20,pamap2,2,1,platt_t0.01,-0.3586905479282867,0.0004166327433385,2.804728662727845,0.0,-0.0003111791390252,,
+V20,pamap2,2,1,platt_t0.05,-0.2023926680646304,0.004918581186312,2.522277093651569,0.0,-0.0028967511261414,,
+V20,pamap2,2,1,platt_t0.1,-0.08283317211483854,0.0154661110414535,2.306913876626915,0.125,-0.0059358060145366,,
+V20,pamap2,2,1,survival_t0.01,-0.40161255277389496,0.0004916613979393,2.883606538555595,0.0,-0.0004013792872817,,
+V20,pamap2,2,1,survival_t0.05,-0.2327368935339258,0.0061470539092296,2.578057921640532,0.0,-0.0030697679667772,,
+V20,pamap2,2,1,survival_t0.1,-0.08731998638197314,0.0197991865739739,2.3163229425983545,0.125,-0.006069185065613,,
+V23,opportunity,1,0,complete_rice2,0.001964409971388359,0.0,3.0,0.75,0.0,,
+V23,opportunity,1,0,complete_rice3,0.0,0.0,3.0,0.0,0.0,,
+V23,opportunity,1,0,direct_t0.01,-0.2975006168832477,0.0015616712946808,2.6975422811711685,0.0,0.0035042145287975,,
+V23,opportunity,1,0,direct_t0.05,-0.12272646055582115,0.009303668397019,2.3746231268848983,0.0,0.0060081145469555,,
+V23,opportunity,1,0,direct_t0.1,-0.0191242518661614,0.0197714541285934,2.1848313404063333,0.25,0.0153918248779143,,
+V23,opportunity,1,0,isotonic_t0.01,-0.18769725358810474,0.0024481785606225,2.494691412308575,0.0,0.0003772240637681,,
+V23,opportunity,1,0,isotonic_t0.05,-0.1045491865868351,0.0074816482711132,2.341473395307357,0.0,0.001727749824152,,
+V23,opportunity,1,0,isotonic_t0.1,-0.05454503120073673,0.0105354853409574,2.249137796348169,0.0,0.0030548861335304,,
+V23,opportunity,1,0,periodic_h1,0.0018080791209740266,0.0,3.0,0.75,0.0,,
+V23,opportunity,1,0,periodic_h16,0.6087639452491027,0.2130744739162155,1.1401523205349848,1.0,0.0819410954710431,,
+V23,opportunity,1,0,periodic_h2,0.31881014733940993,0.0618670782379596,2.0018816389183294,1.0,0.0187302738611019,,
+V23,opportunity,1,0,periodic_h4,0.48551841180105626,0.1284391755809264,1.5016730879101037,1.0,0.0399890292543648,,
+V23,opportunity,1,0,periodic_h8,0.567706455158905,0.1794318369167508,1.2608602056624407,1.0,0.0605435777321419,,
+V23,opportunity,1,0,platt_t0.01,-0.3297552086369835,0.0001398571082439,2.7770444463739627,0.0,2.653366186794459e-06,,
+V23,opportunity,1,0,platt_t0.05,-0.14841798539472473,0.0034584506393245,2.441823675812277,0.0,0.0004278015681916,,
+V23,opportunity,1,0,platt_t0.1,-0.04915086705460081,0.0095319852941406,2.259412217678073,0.0,0.0030979984397774,,
+V23,opportunity,1,0,survival_t0.01,-0.44785363506038656,0.0001434375738176,2.9969362311411185,0.0,-6.178431779194082e-05,,
+V23,opportunity,1,0,survival_t0.05,-0.31933643188345595,0.0024577489555868,2.7586616261583163,0.0,0.0007662714785526,,
+V23,opportunity,1,0,survival_t0.1,-0.09849879993310307,0.0163786422252815,2.350534457082161,0.0,0.0073188199676487,,
+V23,opportunity,2,0,complete_rice2,-0.02622387498479295,0.0,3.0,0.0,0.0,,
+V23,opportunity,2,0,complete_rice3,0.0,0.0,3.0,0.0,0.0,,
+V23,opportunity,2,0,direct_t0.01,-0.43578406069253206,0.0004821100456122,2.954500000568165,0.0,-0.0001707050920397,,
+V23,opportunity,2,0,direct_t0.05,-0.3215457114473048,0.0055350166260034,2.741763893603477,0.0,0.0007354530387315,,
+V23,opportunity,2,0,direct_t0.1,-0.2294770387188938,0.0159354198045808,2.5703809905351984,0.0,0.0009688731187803,,
+V23,opportunity,2,0,isotonic_t0.01,-0.4031345461649225,0.0033982334823148,2.891365971050913,0.0,0.001220381592027,,
+V23,opportunity,2,0,isotonic_t0.05,-0.308839570897548,0.0076818846187585,2.715710672388286,0.0,0.0017806255036784,,
+V23,opportunity,2,0,isotonic_t0.1,-0.25761829635573186,0.0114560908947006,2.6206999975446266,0.0,0.001393184763143,,
+V23,opportunity,2,0,periodic_h1,-0.026419351767519306,0.0,3.0,0.0,0.0,,
+V23,opportunity,2,0,periodic_h16,0.5885415487315913,0.2732327344592214,1.161341689620055,1.0,0.1107670677507578,,
+V23,opportunity,2,0,periodic_h2,0.30553070066041843,0.1174278645244419,2.001631567876622,1.0,0.0273324160880861,,
+V23,opportunity,2,0,periodic_h4,0.46726257699066487,0.1935371360092404,1.5210884011915151,1.0,0.0445753848745236,,
+V23,opportunity,2,0,periodic_h8,0.5483957810642403,0.237429623652724,1.2796803701288773,1.0,0.0576788897454406,,
+V23,opportunity,2,0,platt_t0.01,-0.44162882955410665,9.147457006952068e-05,2.9898063636756187,0.0,-8.074040556413364e-05,,
+V23,opportunity,2,0,platt_t0.05,-0.36306524602938794,0.0014277744980698,2.842446030482719,0.0,0.0006472777413704,,
+V23,opportunity,2,0,platt_t0.1,-0.27121714041752853,0.0078837183812662,2.6718485696358143,0.0,-0.0003267087101197,,
+V23,opportunity,2,0,survival_t0.01,-0.4468171948313353,0.0,3.0,0.0,0.0,,
+V23,opportunity,2,0,survival_t0.05,-0.43718687618563434,9.147457006952068e-05,2.9822963398240505,0.0,0.0,,
+V23,opportunity,2,0,survival_t0.1,-0.360953738397118,0.0046189486792872,2.839850133068849,0.0,0.0001523339655692,,
+V23,opportunity,2,1,complete_rice2,-0.026019122847887433,0.0,3.0,0.0,0.0,,
+V23,opportunity,2,1,complete_rice3,0.0,0.0,3.0,0.0,0.0,,
+V23,opportunity,2,1,direct_t0.01,-0.4388988459775256,0.0001038637307852,2.9594580183728514,0.0,-9.0195828048395e-05,,
+V23,opportunity,2,1,direct_t0.05,-0.31793036938185737,0.0052942602766743,2.7342627269895496,0.0,-0.0010757520468168,,
+V23,opportunity,2,1,direct_t0.1,-0.21348300218254646,0.0144555720888429,2.5395325013200214,0.0,-0.0015204216411411,,
+V23,opportunity,2,1,isotonic_t0.01,-0.4086399871336406,0.0014299003001671,2.903848678066688,0.0,-1.2792557056134912e-05,,
+V23,opportunity,2,1,isotonic_t0.05,-0.3111785147163726,0.0053083583943714,2.7215471934347315,0.0,-0.0007282411039611,,
+V23,opportunity,2,1,isotonic_t0.1,-0.18323100308138374,0.0163533230941792,2.483570239189335,0.0,-0.0008069637157769,,
+V23,opportunity,2,1,periodic_h1,-0.02621549804863732,0.0,3.0,0.0,0.0,,
+V23,opportunity,2,1,periodic_h16,0.5878011531626023,0.2781564563036269,1.1616144090320302,1.0,0.1231947424977767,,
+V23,opportunity,2,1,periodic_h2,0.30399208658414056,0.1133195394351044,2.00345887484467,1.0,0.0306719355286777,,
+V23,opportunity,2,1,periodic_h4,0.46602649459167356,0.1907471655663479,1.5216901096108724,1.0,0.0635419362820152,,
+V23,opportunity,2,1,periodic_h8,0.5476371215605049,0.2401750172479614,1.2803063782431063,1.0,0.0871986227161769,,
+V23,opportunity,2,1,platt_t0.01,-0.4386331174329259,0.0001038637307852,2.983512021430256,0.0,-9.0195828048395e-05,,
+V23,opportunity,2,1,platt_t0.05,-0.3413873051435288,0.0032938063817526,2.8024930297561568,0.0,-0.0001680706600337,,
+V23,opportunity,2,1,platt_t0.1,-0.225268256875353,0.0103159646261652,2.585967999656459,0.0,-0.0003853855668512,,
+V23,opportunity,2,1,survival_t0.01,-0.44726378319746485,0.0,3.0,0.0,0.0,,
+V23,opportunity,2,1,survival_t0.05,-0.4412155070619008,0.0,2.9887831117025367,0.0,0.0,,
+V23,opportunity,2,1,survival_t0.1,-0.37030612075744695,0.0024290388179995,2.856997085477876,0.0,5.9789119333075735e-05,,
+V28 offline,mhealth,1,0,offline_zero_conflict,0.3797800762814061,0.0,3.0,,,,
+V28 offline,mhealth,2,0,offline_zero_conflict,0.3196470461169706,0.0,3.0,,,,
+V28 offline,mhealth,2,1,offline_zero_conflict,0.3183922463679401,0.0,3.0,,,,
+V28 offline,opportunity,1,0,offline_zero_conflict,0.4170176922173176,0.0,3.0,,,,
+V28 offline,opportunity,2,0,offline_zero_conflict,0.2932756313175634,0.0,3.0,,,,
+V28 offline,opportunity,2,1,offline_zero_conflict,0.3001536877969983,0.0,3.0,,,,
+V28 offline,pamap2,1,0,offline_zero_conflict,0.4075991410710584,0.0,3.0,,,,
+V28 offline,pamap2,2,0,offline_zero_conflict,0.3537859549538268,0.0,3.0,,,,
+V28 offline,pamap2,2,1,offline_zero_conflict,0.3551721024505457,0.0,3.0,,,,

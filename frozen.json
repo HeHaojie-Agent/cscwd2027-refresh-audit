@@ -1,0 +1,59 @@
+{
+  "version": "oracle_imitation_v29",
+  "client_date": "2026-10-27",
+  "post_hoc": true,
+  "question": "Can a paid-state causal policy trained on B to imitate V28 zero-conflict offline choices recover offline savings under the unchanged protocol?",
+  "labels": "V28 recursion, twelve slots, Rice2 edges, 30-byte notice pair, zero reference conflict, optimal interval at every B refresh state",
+  "features": "identical 52 paid age-one features as V20 forecasters",
+  "training_subjects": "B only; S node models and A untouched",
+  "families": {
+    "imit_linear": {
+      "model": "logistic",
+      "cap": true,
+      "fee": true
+    },
+    "imit_boost": {
+      "model": "boost",
+      "cap": true,
+      "fee": true,
+      "params": {
+        "max_iter": 30,
+        "max_leaf_nodes": 4,
+        "learning_rate": 0.1,
+        "min_samples_leaf": 20,
+        "l2_regularization": 1.0
+      }
+    },
+    "imit_boost_diag": {
+      "model": "boost",
+      "cap": false,
+      "fee": false,
+      "params": {
+        "max_iter": 100,
+        "max_leaf_nodes": 16,
+        "learning_rate": 0.1,
+        "min_samples_leaf": 20,
+        "l2_regularization": 1.0
+      }
+    }
+  },
+  "gammas": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "decision": "largest h in 2/4/8/16 with monotone P(H*>=h) >= gamma, otherwise immediate refresh",
+  "accounting": "V20 accounting: Rice2 score packets, 30-byte notice pair per decision, 134-byte configuration, 45-byte status, serialized model package per session",
+  "screen": "V20 joint screen unchanged; a family passes only if one gamma passes all six original scenarios (separately all three external)",
+  "diagnostic_family": "imit_boost_diag is non-deployable: package bytes reported but not charged; it bounds paid-state predictability",
+  "no_result_dependent_changes": true,
+  "new_independent_subjects": 0,
+  "drill_opened": false,
+  "original_case_grids": 384,
+  "external_case_grids": 12,
+  "source_sha256": "2b12d210e6a96157360fa11dff906afc9c25679861a9620a48139574ac66e1c4",
+  "created_utc": "2026-10-27T14:10:05.130899+00:00"
+}
