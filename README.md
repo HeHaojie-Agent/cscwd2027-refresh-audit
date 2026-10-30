@@ -1,7 +1,7 @@
 # Online supplement: Auditing Refresh Scheduling in Collaborative Sensing
 
 Online supplement for the CSCWD 2027 submission *Auditing Refresh Scheduling in
-Collaborative Sensing* (Haojie He and Xin Zhong, Tianjin University of Science and Technology).
+Collaborative Sensing* (Haojie He, Tianjin University of Science and Technology).
 It contains the supplementary PDF, the code for the matched offline schedule and
 the causal-imitation experiment, and the summary tables behind the main paper's
 numbers and figures.
