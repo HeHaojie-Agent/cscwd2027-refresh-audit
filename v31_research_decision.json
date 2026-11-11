@@ -1,0 +1,15 @@
+{
+  "version": "learned_trigger_v31",
+  "passing": {
+    "all_six_original": [],
+    "all_three_external": []
+  },
+  "case_grids": 396,
+  "deployable_method": "learntrig_sel",
+  "chosen_theta_counts": {
+    "0.01": 279,
+    "0.03": 85,
+    "0.02": 26,
+    "0.05": 6
+  }
+}

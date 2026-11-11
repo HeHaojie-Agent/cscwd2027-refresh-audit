@@ -27,27 +27,16 @@ def style(ax):
     for s in ('top','right'): ax.spines[s].set_visible(False)
     ax.grid(axis='y',color=GRID,lw=0.5,zorder=0); ax.set_axisbelow(True)
 
-def envelope(out='cost_envelope'):
-    d=pd.read_csv('figure_envelope_points.csv')
-    fig,axes=plt.subplots(1,3,figsize=(W,1.85),sharey=True)
-    for ax,(ds,title) in zip(axes,TITLES):
-        style(ax)
-        ax.axhline(30,color=MUTED,lw=0.9,ls=(0,(1,2)),zorder=2)
-        ax.axhline(0,color=MUTED,lw=0.9,ls=(0,(4,2)),zorder=2)
-        for m,c,mk in (('direct_t0.01',DIR,'o'),('survival_t0.01',HAZ,'^')):
-            g=d[(d.dataset==ds)&(d.method==m)].sort_values('extra_payload')
-            ax.plot(g.extra_payload,g.notice_pair_cap,color=c,lw=1.4,marker=mk,ms=4.2,mec='white',mew=0.6,zorder=4)
-        ax.set_xlim(-3,67); ax.set_xticks([0,16,32,48,64]); ax.set_ylim(-30,36); ax.set_yticks([-30,-20,-10,0,10,20,30])
-        ax.set_title(title,pad=3); ax.set_xlabel('Bytes added per score packet, $u$')
-    axes[0].set_ylabel('Affordable notice-pair charge (B)')
-    handles=[Line2D([],[],color=HAZ,lw=1.4,marker='^',ms=4.2,mec='white',mew=0.6,label='Hazard 0.01'),
-             Line2D([],[],color=DIR,lw=1.4,marker='o',ms=4.2,mec='white',mew=0.6,label='Direct 0.01'),
-             Line2D([],[],color=MUTED,lw=0.9,ls=(0,(4,2)),label='Free control (0 B)'),
-             Line2D([],[],color=MUTED,lw=0.9,ls=(0,(1,2)),label='Implemented charge (30 B)')]
-    fig.legend(handles=handles,loc='upper center',ncol=4,frameon=False,bbox_to_anchor=(0.5,1.0),handlelength=2.2,columnspacing=1.6)
-    fig.subplots_adjust(left=0.075,right=0.99,bottom=0.21,top=0.8,wspace=0.12)
-    fig.savefig(out+'.pdf'); fig.savefig(out+'.png',dpi=300); plt.close(fig)
 
+AUXC='#E69F00'
+def _aux():
+    a=pd.concat([pd.read_csv('aux_trigger_v30_points.csv'),pd.read_csv('aux_trigger_v30b_points.csv')],ignore_index=True)
+    a=a[(a.stride==1)&(a.offset==0)&(a.method!='auxtrig_sel')].copy()
+    a['kappa']=a.method.str.extract(r'k([0-9.]+)$')[0].astype(float)
+    a=a[a.kappa<=6]
+    a['x']=100*a.reference_disagreement; a['y']=100*a.savings_fraction
+    return a
+AUX=_aux()
 def frontier(out='imitation_frontier'):
     f=pd.read_csv('frontier_points.csv'); f=f[(f.stride==1)&(f.offset==0)].copy()
     f['x']=100*f.reference_disagreement; f['y']=100*f.savings_fraction
@@ -67,6 +56,9 @@ def frontier(out='imitation_frontier'):
             g['gamma']=g.method.str.extract(r'_g([0-9.]+)$')[0].astype(float); g=g.sort_values('gamma')
             ax.plot(g.x,g.y,color=c,lw=1.2,zorder=4)
             ax.scatter(g.x,g.y,s=16,marker=m,facecolor=c,edgecolor='white',lw=0.5,zorder=5)
+        g=AUX[AUX.dataset==ds].sort_values('kappa')
+        ax.plot(g.x,g.y,color=AUXC,lw=1.7,zorder=6)
+        ax.scatter(g.x,g.y,s=18,marker='^',facecolor=AUXC,edgecolor='white',lw=0.5,zorder=7)
         o=d[d.source=='V28 offline']
         ax.scatter(o.x,o.y,s=80,marker='*',color=HAZ,edgecolor='white',lw=0.5,zorder=6)
         ax.annotate(f"{o.y.iloc[0]:.1f}%",(o.x.iloc[0],o.y.iloc[0]),xytext=(6,-3),textcoords='offset points',fontsize=7.5,color=INK)
@@ -77,11 +69,13 @@ def frontier(out='imitation_frontier'):
     handles=[Line2D([],[],ls='',marker='*',ms=8,color=HAZ,mec='white',label='Offline zero-conflict'),
              *[Line2D([],[],color=c,lw=1.2,marker=m,ms=4.2,mfc=c,mec='white',label=lab) for c,m,lab in fam.values()],
              Line2D([],[],ls='',marker='o',ms=4.2,mfc='white',mec=MUTED,label='Threshold forecasters'),
-             Line2D([],[],ls='',marker='x',ms=4.5,color=INK,label='Periodic, interval 2')]
-    order=[0,4,5,1,2,3]
-    fig.legend(handles=[handles[i] for i in order],loc='upper center',ncol=3,frameon=False,bbox_to_anchor=(0.5,1.0),handlelength=2.0,columnspacing=1.6,handletextpad=0.5)
+             Line2D([],[],ls='',marker='x',ms=4.5,color=INK,label='Periodic, interval 2'),
+             Line2D([],[],color=AUXC,lw=1.7,marker='^',ms=4.5,mfc=AUXC,mec='white',label='Auxiliary self-trigger (ours)')]
+    order=[6,0,4,1,2,3,5]
+    fig.legend(handles=[handles[i] for i in order],loc='upper center',ncol=4,frameon=False,bbox_to_anchor=(0.5,1.0),handlelength=2.0,columnspacing=1.6,handletextpad=0.5)
     fig.subplots_adjust(left=0.075,right=0.99,bottom=0.18,top=0.72,wspace=0.12)
     fig.savefig(out+'.pdf'); fig.savefig(out+'.png',dpi=300); plt.close(fig)
 
+
 if __name__=='__main__':
-    envelope(); frontier()
+    frontier()

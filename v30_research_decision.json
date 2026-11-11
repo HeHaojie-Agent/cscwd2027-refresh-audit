@@ -1,0 +1,13 @@
+{
+  "version": "aux_trigger_v30",
+  "passing": {
+    "all_six_original": [],
+    "all_three_external": []
+  },
+  "case_grids": 396,
+  "deployable_method": "auxtrig_sel",
+  "chosen_kappa_counts": {
+    "1.0": 394,
+    "1.5": 2
+  }
+}

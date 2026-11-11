@@ -1,0 +1,31 @@
+{
+  "version": "aux_trigger_v30",
+  "client_date": "2026-11-11",
+  "post_hoc": true,
+  "question": "Do auxiliary self-triggered pushes on a cheap raw-window descriptor pass the unchanged V20/V23 screen?",
+  "descriptor": "per-axis mean and standard deviation of the auxiliary node own window (cleaned signal), no classifier call",
+  "statistic": "max over components of |d(t)-d(last push)| / sigma, sigma = B subject-equal mean of per-subject median consecutive change",
+  "push_rule": "reset or age >= 16 or statistic > kappa; independent per auxiliary; no notice/request messages",
+  "kappas": [
+    1.0,
+    1.5,
+    2.0,
+    3.0,
+    4.0,
+    6.0,
+    8.0,
+    12.0,
+    16.0
+  ],
+  "selection": "B only: lowest B bytes among kappas meeting B saving>=10%, positive>=75%, calls<=2.7, disagreement<=1%, F1 drop<=0.005; else smallest kappa",
+  "accounting": "Rice2 score packets, 134-byte configuration and trigger package per session, 45-byte status, no notices",
+  "screen": "V20 joint screen unchanged; deployable method auxtrig_sel must pass all six original scenarios (separately all three external)",
+  "fixed_kappas": "reported as a frontier; a fixed kappa passing everywhere is post hoc across nine values",
+  "no_result_dependent_changes": true,
+  "new_independent_subjects": 0,
+  "drill_opened": false,
+  "original_case_grids": 384,
+  "external_case_grids": 12,
+  "source_sha256": "46c4d40af7a75af172c031f2e9f39aa529a46ba1ea0aa581ba75d77be525e3fe",
+  "created_utc": "2026-11-11T02:37:01.778387+00:00"
+}

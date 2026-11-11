@@ -1,0 +1,47 @@
+{
+  "version": "learned_trigger_v31",
+  "client_date": "2026-11-11",
+  "post_hoc": true,
+  "designed_after": "V30 A results were seen; same subjects as V30",
+  "question": "Does a B-trained logistic auxiliary-side change detector make self-triggered push pass the unchanged screen?",
+  "descriptor": "per-axis mean, standard deviation, mean absolute first difference of the auxiliary own window",
+  "features": "standardized level, normalized change since last push, its absolute value, max absolute change, age/16",
+  "label": "staleness of this auxiliary alone changes the fused argmax (other nodes current)",
+  "training": {
+    "ages": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      12,
+      15
+    ],
+    "pair_cap_per_subject": 6000,
+    "weights": "subject-equal",
+    "model": "L2 logistic, C=1"
+  },
+  "push_rule": "reset or age >= 16 or p > theta; independent per auxiliary; no notice/request messages",
+  "thetas": [
+    0.01,
+    0.02,
+    0.03,
+    0.05,
+    0.075,
+    0.1,
+    0.15,
+    0.2,
+    0.3
+  ],
+  "selection": "B only: lowest B bytes among thetas meeting B saving>=10%, positive>=75%, calls<=2.7, F1 drop<=0.005, disagreement<=0.0075; else smallest theta",
+  "accounting": "V30 ledger; float32 detector package charged per session; no notices",
+  "screen": "V20 joint screen unchanged; deployable method learntrig_sel must pass all six original scenarios (separately all three external)",
+  "no_result_dependent_changes": true,
+  "new_independent_subjects": 0,
+  "drill_opened": false,
+  "original_case_grids": 384,
+  "external_case_grids": 12,
+  "source_sha256": "113b1980ed6c6a5e848db5b490b4e1e11b2236f39ae19f171fac9d92b31f8ca7",
+  "created_utc": "2026-11-11T03:15:31.987340+00:00"
+}
