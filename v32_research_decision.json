@@ -1,0 +1,33 @@
+{
+  "version": "twoside_trigger_v32",
+  "passing": {
+    "all_six_original": [],
+    "all_three_external": []
+  },
+  "case_grids": 396,
+  "deployable_method": "twoside_sel",
+  "chosen_counts": {
+    "k1_d48": 73,
+    "k4_d24": 56,
+    "k3_d24": 52,
+    "k3_d16": 51,
+    "k4_d16": 31,
+    "k2_d16": 24,
+    "k4_d32": 21,
+    "k3_d32": 18,
+    "k1.5_d16": 11,
+    "k3_d8": 10,
+    "k2_d8": 10,
+    "k1.5_d8": 8,
+    "k4_d8": 5,
+    "k2_d24": 5,
+    "k1_d8": 4,
+    "k1_d4": 4,
+    "k3_d48": 3,
+    "k2_d32": 3,
+    "k4_d48": 2,
+    "k1.5_d32": 2,
+    "k1.5_d4": 2,
+    "k2_d48": 1
+  }
+}

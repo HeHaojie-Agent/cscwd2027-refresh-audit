@@ -37,6 +37,12 @@ def _aux():
     a['x']=100*a.reference_disagreement; a['y']=100*a.savings_fraction
     return a
 AUX=_aux()
+def _two():
+    t=pd.read_csv('twoside_trigger_v32_points.csv')
+    t=t[(t.stride==1)&(t.offset==0)&(t.method=='twoside_sel')].copy()
+    t['x']=100*t.reference_disagreement; t['y']=100*t.savings_fraction
+    return t
+TWO=_two()
 def frontier(out='imitation_frontier'):
     f=pd.read_csv('frontier_points.csv'); f=f[(f.stride==1)&(f.offset==0)].copy()
     f['x']=100*f.reference_disagreement; f['y']=100*f.savings_fraction
@@ -59,6 +65,8 @@ def frontier(out='imitation_frontier'):
         g=AUX[AUX.dataset==ds].sort_values('kappa')
         ax.plot(g.x,g.y,color=AUXC,lw=1.7,zorder=6)
         ax.scatter(g.x,g.y,s=18,marker='^',facecolor=AUXC,edgecolor='white',lw=0.5,zorder=7)
+        tw=TWO[TWO.dataset==ds]
+        ax.scatter(tw.x,tw.y,s=46,marker='D',facecolor='#B35806',edgecolor='white',lw=0.8,zorder=9)
         o=d[d.source=='V28 offline']
         ax.scatter(o.x,o.y,s=80,marker='*',color=HAZ,edgecolor='white',lw=0.5,zorder=6)
         ax.annotate(f"{o.y.iloc[0]:.1f}%",(o.x.iloc[0],o.y.iloc[0]),xytext=(6,-3),textcoords='offset points',fontsize=7.5,color=INK)
@@ -70,8 +78,9 @@ def frontier(out='imitation_frontier'):
              *[Line2D([],[],color=c,lw=1.2,marker=m,ms=4.2,mfc=c,mec='white',label=lab) for c,m,lab in fam.values()],
              Line2D([],[],ls='',marker='o',ms=4.2,mfc='white',mec=MUTED,label='Threshold forecasters'),
              Line2D([],[],ls='',marker='x',ms=4.5,color=INK,label='Periodic, interval 2'),
-             Line2D([],[],color=AUXC,lw=1.7,marker='^',ms=4.5,mfc=AUXC,mec='white',label='Auxiliary self-trigger (ours)')]
-    order=[6,0,4,1,2,3,5]
+             Line2D([],[],color=AUXC,lw=1.7,marker='^',ms=4.5,mfc=AUXC,mec='white',label='Auxiliary push only (ours)'),
+             Line2D([],[],ls='',marker='D',ms=5,mfc='#B35806',mec='white',label='Two-sided trigger (ours, frozen)')]
+    order=[7,6,0,4,1,2,3,5]
     fig.legend(handles=[handles[i] for i in order],loc='upper center',ncol=4,frameon=False,bbox_to_anchor=(0.5,1.0),handlelength=2.0,columnspacing=1.6,handletextpad=0.5)
     fig.subplots_adjust(left=0.075,right=0.99,bottom=0.18,top=0.72,wspace=0.12)
     fig.savefig(out+'.pdf'); fig.savefig(out+'.png',dpi=300); plt.close(fig)

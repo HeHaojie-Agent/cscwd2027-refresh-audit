@@ -87,7 +87,7 @@ xt = 0.80
 txt(xt, 2.36, r'$\mathbf{P}$ primary, hand: infers every window, caches', fontsize=6.6)
 txt(xt + 0.09, 2.25, 'auxiliary class scores, and decides when to refresh', fontsize=6.6)
 txt(xt, 2.13, r'$\mathbf{1,2}$ auxiliaries, chest and ankle: infer on request,', fontsize=6.6)
-txt(xt + 0.09, 2.02, 'or (ours) push when their own raw signal changes', fontsize=6.6, color='#B07800')
+txt(xt + 0.09, 2.02, '(ours) push on own signal change; primary pulls if fragile', fontsize=6.6, color='#B07800')
 # decision flow
 y0 = 1.875
 spec = [(xt, 0.52, 'paid state $x_t$'), (xt + 0.62, 0.44, r'risk $F(h)$'), (xt + 1.16, 0.76, r'interval $H=\Psi_\epsilon(F)$')]
@@ -110,8 +110,9 @@ rows = [
     ('Hazard scheduler',          'sched', [1,2,3,5,6,8,9,10,11,12,13,14,15,16],     [],      136.1, '0.08%', None),
     ('Offline schedule$^\\dagger$','sched', [1,9,10,14],                             [],      59.2,  '0',     ORANGE),
     ('Imitation, best $\\leq$1%', 'sched', [1,2,4,6,8,9,10,11,13,15],                [],      104.4, '0.96%', PINK),
-    ('Aux. self-trigger (ours)',  'push',  [1,2,3,4,6,7,9,10,11,12,13,14,16],         [],      88.2,  '1.69%', '#E69F00'),
+    ('Two-sided trigger (ours)',  'push',  [1,2,3,5,6,8,9,10,11,13,14,16],           [],      87.6,  '1.02%', '#E69F00'),
 ]
+PULLS = (9,)
 ys = 1.27
 for w in range(1, 17):
     ax.add_patch(Rectangle((x0 + (w - 1) * dx, ys - 0.045), dx, 0.09, fc='#ECECEC' if w < 10 else '#CFCFCF', ec='white', lw=0.5))
@@ -131,7 +132,7 @@ for i, (lab, kind, ref, bad, byt, dis, col) in enumerate(rows):
         xc = x0 + (w - 0.5) * dx
         if kind == 'all' or w in ref:
             cube(xc, y, BLUE)
-            if kind == 'sched':
+            if kind == 'sched' or (kind == 'push' and w in PULLS):
                 ax.plot([xc, xc], [y + 0.05, y + 0.085], color='#444444', lw=0.9, zorder=3, solid_capstyle='butt')
         else:
             ax.add_patch(Circle((xc, y), 0.015, fc='white', ec='#9A9A9A', lw=0.5, zorder=3))

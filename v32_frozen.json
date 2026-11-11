@@ -1,0 +1,34 @@
+{
+  "version": "twoside_trigger_v32",
+  "client_date": "2026-11-11",
+  "post_hoc": true,
+  "designed_after": "V30 and V31 A results were seen; same subjects",
+  "question": "Does adding a primary margin guard to auxiliary self-triggered push pass the unchanged screen?",
+  "auxiliary_rule": "V30 descriptor, B-fitted sigma, push when reset, age >= 16, or max normalized change > kappa",
+  "primary_rule": "if any auxiliary is stale and fused uint8 margin <= delta, pull all stale auxiliaries with one 30-byte notice pair",
+  "kappas": [
+    1.0,
+    1.5,
+    2.0,
+    3.0,
+    4.0
+  ],
+  "deltas": [
+    4,
+    8,
+    16,
+    24,
+    32,
+    48
+  ],
+  "selection": "B only: lowest B bytes among (kappa, delta) meeting B saving>=10%, positive>=75%, calls<=2.7, disagreement<=1%, F1 drop<=0.005; else smallest kappa with largest delta",
+  "accounting": "V30 ledger + 30 bytes and two messages per pull; package carries sigma, kappa, delta",
+  "screen": "V20 joint screen unchanged; deployable method twoside_sel must pass all six original scenarios (separately all three external)",
+  "no_result_dependent_changes": true,
+  "new_independent_subjects": 0,
+  "drill_opened": false,
+  "original_case_grids": 384,
+  "external_case_grids": 12,
+  "source_sha256": "233d9c2b7af8b9e480a77a9ca553b6d0b0cf3cd52b6bfde34c1c903e71271fff",
+  "created_utc": "2026-11-11T06:52:05.167500+00:00"
+}
