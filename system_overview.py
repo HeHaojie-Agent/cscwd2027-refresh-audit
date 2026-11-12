@@ -150,6 +150,6 @@ cube(0.07, yl, BLUE)
 txt(0.12, yl, 'score packet', fontsize=6.2)
 ax.plot([0.66, 0.66], [yl - 0.04, yl + 0.04], color='#444444', lw=0.9); txt(0.71, yl, 'notice pair', fontsize=6.2)
 ax.add_patch(Circle((1.26, yl), 0.015, fc='white', ec='#9A9A9A', lw=0.5)); txt(1.31, yl, 'cache reuse', fontsize=6.2)
-ax.plot(1.88, yl, marker='x', color=RED, ms=5, mew=1.1); txt(1.94, yl, 'fused output differs from complete push', fontsize=6.2)
+ax.plot([1.88, 1.88], [yl - 0.045, yl + 0.045], color=RED, lw=0.6, ls=(0, (2, 1.5))); txt(1.93, yl, 'activity change at window 10', fontsize=6.2)
 
 fig.savefig('system_overview.pdf', dpi=600); fig.savefig('system_overview.png', dpi=300)
