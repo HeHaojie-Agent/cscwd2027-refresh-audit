@@ -87,7 +87,7 @@ xt = 0.80
 txt(xt, 2.36, r'$\mathbf{P}$ primary, hand: infers every window, caches', fontsize=6.6)
 txt(xt + 0.09, 2.25, 'auxiliary class scores, and decides when to refresh', fontsize=6.6)
 txt(xt, 2.13, r'$\mathbf{1,2}$ auxiliaries, chest and ankle: infer on request,', fontsize=6.6)
-txt(xt + 0.09, 2.02, '(ours) push on own signal change; primary pulls if fragile', fontsize=6.6, color='#B07800')
+txt(xt + 0.09, 2.02, '(V32) push on own signal change; primary pulls if fragile', fontsize=6.6, color='#B07800')
 # decision flow
 y0 = 1.875
 spec = [(xt, 0.52, 'paid state $x_t$'), (xt + 0.62, 0.44, r'risk $F(h)$'), (xt + 1.16, 0.76, r'interval $H=\Psi_\epsilon(F)$')]
@@ -110,7 +110,7 @@ rows = [
     ('Hazard scheduler',          'sched', [1,2,3,5,6,8,9,10,11,12,13,14,15,16],     [],      136.1, '0.08%', None),
     ('Offline schedule$^\\dagger$','sched', [1,9,10,14],                             [],      59.2,  '0',     ORANGE),
     ('Imitation, best $\\leq$1%', 'sched', [1,2,4,6,8,9,10,11,13,15],                [],      104.4, '0.96%', PINK),
-    ('Two-sided trigger (ours)',  'push',  [1,2,3,5,6,8,9,10,11,13,14,16],           [],      87.6,  '1.02%', '#E69F00'),
+    ('Paired pull (V32)',  'push',  [1,2,3,5,6,8,9,10,11,13,14,16],           [],      87.6,  '1.02%', '#E69F00'),
 ]
 PULLS = (9,)
 ys = 1.27
@@ -152,4 +152,4 @@ ax.plot([0.66, 0.66], [yl - 0.04, yl + 0.04], color='#444444', lw=0.9); txt(0.71
 ax.add_patch(Circle((1.26, yl), 0.015, fc='white', ec='#9A9A9A', lw=0.5)); txt(1.31, yl, 'cache reuse', fontsize=6.2)
 ax.plot([1.88, 1.88], [yl - 0.045, yl + 0.045], color=RED, lw=0.6, ls=(0, (2, 1.5))); txt(1.93, yl, 'activity change at window 10', fontsize=6.2)
 
-fig.savefig('system_overview.pdf', dpi=600); fig.savefig('system_overview.png', dpi=300)
+fig.savefig('figures/system_overview.pdf', dpi=600); fig.savefig('figures/system_overview.png', dpi=300)

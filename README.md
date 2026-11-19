@@ -1,3 +1,32 @@
+# Auditing Refresh Scheduling in Collaborative Sensing
+
+This upload bundle accompanies paper revision V15. For the current comparison,
+start with `supplement.pdf` (Sections VIII and IX) and `v36_comparison_all_versions.csv`.
+The nine final rows are in `v36_dataset_equal_metrics.csv`. The V36 case archive
+contains 396 calibration selections and evaluation records. The V33 evidence
+archive includes the baseline adaptation, its source provenance, fixed operating
+points and the dependencies and instructions for that stage. V34 and V35 frozen
+specifications, summaries, and the V34--V36 entry points accompany this bundle.
+Full replay needs the upstream score frames and earlier calibration artifacts.
+The included tables allow readers to inspect the reported operating points without
+regenerating the raw traces.
+
+V36 was refined on a previously used development cohort, with a compact application
+ledger conditional on shared session ticks and peer-bound channels. It is a matched
+replay comparison, not an independently validated result or a HAR leaderboard claim.
+
+## Figures in the current paper
+
+Figures 1 and 2 are available as editable PowerPoint diagrams and vector PDFs. The Python script reproduces earlier draft versions of those two figures.
+
+Extract `figure_source.zip` next to `plot_submission_figures.py` and run
+`python plot_submission_figures.py` with Matplotlib, NumPy, and pandas. This
+writes vector PDF/SVG and 300 dpi PNG versions of the mechanism diagram, the
+replayed PAMAP2 window, the hazard cost envelope, and the single-view results.
+The trace JSON contains score tuples that reproduce both displayed margins.
+
+## Historical experiment index (through V32)
+
 # Online supplement: Auditing Refresh Scheduling in Collaborative Sensing
 
 Online supplement for the CSCWD 2027 submission *Auditing Refresh Scheduling in

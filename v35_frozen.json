@@ -1,0 +1,14 @@
+{
+  "source_hashes": {
+    "run_compact_refresh_v35.py": "efc5722c8fe2916472c9957c4a1f94d5b297273de6dab51c44799661e13fe096",
+    "run_targeted_refresh_v34.py": "3ab053f2589ce22e25a1ff0dee3490584f687f362f9b3a378d077d50c44a74f6",
+    "run_published_baselines_v33.py": "dd27e8841228e6de0bb81cd8156bf7bc8d430a20e9a228fe940fec3c72acca23"
+  },
+  "created_utc": "2026-11-18T12:10:13.872531+00:00",
+  "notice_bytes": 3,
+  "shared_session_ticks": true,
+  "peer_bound_channel": true,
+  "binding_bytes_per_session": 54,
+  "existing_development_data": true,
+  "new_independent_subjects": 0
+}

@@ -1,0 +1,9 @@
+{
+  "case_grids": 396,
+  "view_rows": 780,
+  "packets_verified": 85828,
+  "exact_rational_recovery_weights": true,
+  "passed": {
+    "recovery_compact_sel": 9
+  }
+}

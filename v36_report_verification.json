@@ -1,0 +1,24 @@
+{
+  "pages": 1,
+  "table_scenarios": 9,
+  "sha256": "29e40d9fb16580ebfd7472a7462d82e63abc558f485a517a3b296585da2447da",
+  "passes": {
+    "bt_supervised_cache_compact_sel": 0,
+    "bt_supervised_cache_sel": 0,
+    "bt_supervised_native_compact_sel": 0,
+    "bt_supervised_native_sel": 0,
+    "bt_unlabeled_cache_compact_sel": 0,
+    "bt_unlabeled_cache_sel": 0,
+    "bt_unlabeled_native_compact_sel": 0,
+    "bt_unlabeled_native_sel": 0,
+    "compact_reserve_sel": 8,
+    "compact_sel": 8,
+    "margin_compact_sel": 0,
+    "margin_sel": 0,
+    "recovery_compact_sel": 9,
+    "targeted_reserve_sel": 7,
+    "targeted_sel": 3,
+    "targeted_v32_parameters": 4,
+    "twoside_sel": 4
+  }
+}

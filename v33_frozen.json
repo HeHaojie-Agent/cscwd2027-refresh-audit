@@ -1,0 +1,52 @@
+{
+  "version": "published_baselines_v33",
+  "client_date": "2026-11-18",
+  "created_utc": "2026-11-18T11:38:07.729796+00:00",
+  "designed_after": "V32 evaluation known; post-development benchmark",
+  "cases": 396,
+  "new_subjects": 0,
+  "reference": "Cooper and Marculescu, Beyond Thresholds, IoTDI2024, DOI10.1109/IoTDI61053.2024.00005",
+  "author_repository": "https://github.com/SLDGroup/BeyondThresholds",
+  "author_commit": "7ab9c55b1995be5288b25abbe042926dab15fefe",
+  "families": [
+    "bt_supervised_native",
+    "bt_unlabeled_native",
+    "bt_supervised_cache",
+    "bt_unlabeled_cache"
+  ],
+  "bins": 10,
+  "ensemble_bin_budgets": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "margin_deltas": [
+    4,
+    8,
+    16,
+    24,
+    32,
+    48
+  ],
+  "confidence": "Softmax of quantized primary Ridge scores mapped back to [-4,4], over active classes, temperature1",
+  "calibration": "B known endpoints: equal-frequency bins and empirical ensemble-minus-primary accuracy; unlabeled gains use B primary/ensemble agreement",
+  "adaptation": [
+    "Frozen node models; fixed primary instead of rotating initial sensor",
+    "B calibration subjects rather than target-subject calibration",
+    "Native no-query output is primary only; cache wrappers reuse fused scores and force age16",
+    "Fixed-primary adaptation caps ensemble fraction from a count of all requests, with protocol resets and cache age taking priority",
+    "Full codec and control/model costs included; byte targets and existing quality/recovery gates unchanged"
+  ],
+  "selection": "B only minimum bytes meeting B byte/positive/call/disagreement/F1 conditions, otherwise matched complete-push fallback",
+  "no_tuning_on_new_A": true,
+  "source_sha256": "fe426c65baa42c18d0dee61e4a037f9252785655fb95a17ef465e78e99387a61",
+  "drill_opened": false
+}

@@ -1,0 +1,26 @@
+{
+  "checked_date": "2026-11-18",
+  "primary_paper": "https://par.nsf.gov/servlets/purl/10547273",
+  "author_code": "https://github.com/SLDGroup/BeyondThresholds",
+  "author_commit": "7ab9c55b1995be5288b25abbe042926dab15fefe",
+  "author_paper_sha256": "9a6996e15d2744d0cde06e9583b7a92504ed616d8f55da062c9d15b14ab56502",
+  "other_candidates": [
+    {
+      "name": "CoSS",
+      "primary": "https://www.dfki.de/en/web/research/projects-and-publications/publication/17091",
+      "status": "Vetted adjacent sensor/rate co-optimization work; not run in this frozen-model refresh benchmark"
+    },
+    {
+      "name": "Viveka",
+      "primary": "https://arxiv.org/abs/2608.05572",
+      "status": "2026 author preprint; not run; energy and sampling objectives differ from the serialized score-refresh objective"
+    }
+  ],
+  "task": "Communication saving subject to the existing quality/call/recovery screen",
+  "leaderboard_claim": false,
+  "unmodified_original_experiment_claim": false,
+  "comparison_source_sha256": {
+    "V33": "97ff72ef1ccdd05edff655a86d515e5d94af11077cc2bb8068c0d270a0d89bc5",
+    "V32": "e96fbcd165e344b2c6f4fd47c08e17a50ad814a5001a6d11f901a89581bb1bb2"
+  }
+}

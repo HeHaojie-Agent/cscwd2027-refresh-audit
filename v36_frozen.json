@@ -1,0 +1,14 @@
+{
+  "code": {
+    "run_targeted_refresh_v34": "3ab053f2589ce22e25a1ff0dee3490584f687f362f9b3a378d077d50c44a74f6",
+    "run_compact_refresh_v35": "efc5722c8fe2916472c9957c4a1f94d5b297273de6dab51c44799661e13fe096",
+    "v36": "7c6eaa20918c97469a2b1d03021fdd504e7514d50752fe97706d530fe287320e"
+  },
+  "created_utc": "2026-11-18T12:16:27.750982+00:00",
+  "B_disagreement_limit": 0.0085,
+  "B_recovery_gates": true,
+  "fallback": "V35 B-only 0.75% reserve",
+  "A_screen_changed": false,
+  "designed_after_V35_evaluation": true,
+  "new_independent_subjects": 0
+}
